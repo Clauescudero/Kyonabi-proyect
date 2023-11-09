@@ -1,0 +1,36 @@
+
+
+.formurario{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    
+   
+}
+.seccion-sugerencia-text{
+    text-align: center;
+    color: white;
+}
+
+.input{
+    padding-top: 9px;
+
+   
+   
+}
+
+
+
+
+.form{background-color:none;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    
+}
+
+
+

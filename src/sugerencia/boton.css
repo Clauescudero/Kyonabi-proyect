@@ -1,0 +1,41 @@
+#btnf{
+    border: 0;
+    background-image: linear-gradient(
+      150deg,
+      #9500ff,
+      #09f,
+      #00ddff
+    );
+    border-radius: 8px;
+    color: white;
+    display: grid;
+    font-size: 13px;
+    padding: 4px;
+    cursor: pointer;
+    width: 50%;
+    transition: .3s;
+      
+  }
+  
+  button span{
+      background-color: #111;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      align-items: center;
+      padding: 14px, 20px;
+      border-radius: 6px;
+      transition:  .3s;
+  
+  }
+  
+  button:hover span{
+      background: none;
+  }
+  
+  button:active{
+      transform: scale(0.8);
+  }
+
+  .botones {
+    display: flex;
+    gap: 5px;
+  }
