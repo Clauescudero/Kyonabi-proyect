@@ -1,0 +1,157 @@
+.btn btn-link px-3 me-2 {
+  background-color: #ffffff;
+}
+.Card-container{
+  display:flex;
+  justify-content: center;
+}
+
+
+.Card-container{
+  padding: 5rem;
+
+}
+.card{
+  background-color: #ffffff;
+  width: 1250px;
+  height: 500px;
+  padding: 20px;
+    border-radius: 10px; 
+    top: px; 
+  left: 300px;
+  margin-bottom: 80px;
+  display:flex
+  
+}
+
+.card-title-banner {
+  font-size: 70px;
+  font-weight: bold;
+  color: #8fe3f1;
+  margin-left: 80px; 
+  margin-top: 100px;
+  text-align: justify;
+}
+.card-text {
+  font-size: 15px;
+  color: #626060;
+  margin-right: 550px;
+  margin-left: 80px; 
+  margin-top: 50px;
+  text-align: justify;
+}
+
+.card.mb-3 {
+  margin-bottom: 10px;
+  width: 600px; 
+  height: 360px; 
+}
+.card-title3 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #8fe3f1;
+  margin-left: 0px; 
+  margin-top: 0px;
+  text-align: left;
+}
+.card-text3 {
+  font-size: 17px;
+  color: #626060;
+  margin-right: 40px;
+  margin-left: 0px; 
+  margin-top: 15px;
+  text-align: justify;
+}
+
+.card.mb-4 {
+  margin-left: 650px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 600px; 
+  height: 360px; 
+}
+
+.img-fluidcard2 {
+  margin-left: 370px;
+  width: 200px; /* Cambiar el ancho de la imagen a 200 píxeles */
+  height: auto;
+  
+}
+.card-title4 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #8fe3f1;
+  text-align: left;
+}
+
+
+
+footer {
+  opacity: 50%;
+  }
+footer {
+  margin-top: 200px;
+  margin-bottom: 20px;
+  background: #000000; 
+  color: #ffffff; 
+  padding: 50px 0; 
+  text-align: center; 
+}
+#columnas{
+   column-count:3;
+   column-gap:30px;
+   column-rule:3px double black;
+   list-style: none;
+  margin-left: 300px;
+}
+
+.img-redes {
+  width: 90%; 
+  height: auto; 
+  margin-left: 20px;
+  
+}
+
+
+#Reproductor {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%; 
+  background-color: #b8faff; 
+  color: white;
+  border: 2px solid #8fe3f1; 
+  border-radius: 5px; 
+  padding: 10px; 
+  z-index: 999;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#bb18fd, #8fe3f1);
+  margin: 0; 
+  padding: 0;
+}
+
+
+.navbar-logo {
+  width: 60px; 
+  height: auto; 
+}
+
+.card {
+  width: 1000px;
+  border: 1px solid #ddd; 
+  border-radius: 10px; 
+  top: 100px; 
+left: 200px;
+}
+ 
+.card-title {
+  color: #333; 
+}
+
+.card-text {
+  color: #666; 
+}
