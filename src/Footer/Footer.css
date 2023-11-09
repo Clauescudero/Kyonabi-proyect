@@ -1,0 +1,32 @@
+
+footer {
+    opacity: 0.5;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    background: #000000; 
+    color: #ffffff; 
+    padding: 50px 0; 
+    text-align: center; 
+  }
+  
+  #columnas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  .img-redes {
+    max-width: 100px; /* Ajusta el ancho según tus necesidades */
+    height: auto;
+  }
+  

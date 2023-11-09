@@ -4,13 +4,9 @@
 .Card-container{
   display:flex;
   justify-content: center;
+  flex-direction: column;
 }
 
-
-.Card-container{
-  padding: 5rem;
-
-}
 .card{
   background-color: #ffffff;
   width: 1250px;

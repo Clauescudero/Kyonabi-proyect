@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import NavBar from './Reutilizables/NavBar';
