@@ -1,0 +1,48 @@
+.relacionadas {
+    text-align: center;
+border: none ;
+width: 150px;
+height: 200px;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode';
+font-style:oblique;
+border-radius: 10px;
+cursor: pointer;
+ position: relative;
+
+background-image:rgba(201, 250, 255, 0.721);
+
+
+padding: 4px;
+transition: .3s
+
+
+}
+.relacionadas:hover{
+    cursor: pointer;
+    color: #000000;
+    transition:3.s ;
+}
+.relacionadas:active{
+    transform: scale(0.12);
+}
+
+
+
+
+.distribuicion{
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,minmax(
+            150px,1fr
+        )
+    );
+    gap: 16px;
+    padding-top: 70px;
+}
+
+.secion img{
+    width: 140px;
+    height: 150px;
+    border-radius: 7px;
+
+}
