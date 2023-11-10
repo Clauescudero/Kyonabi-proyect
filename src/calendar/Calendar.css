@@ -1,42 +1,36 @@
-body, html {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    height: 100vh; 
-}
-
-.calendar-container{
+/* Prefijo único para el componente Calendar */
+.calendar-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center; 
-    height: 100vh; 
+    align-items: center;
+    height: 100vh;
 }
 
-.calendar {
+.calendar-container .calendar {
     margin: 20px;
 }
 
-table {
+.calendar-container table {
     border-collapse: collapse;
 }
 
-.calendar td {
+.calendar-container .calendar td {
     width: 40px;
     height: 30px;
     border: 1px solid #000000;
     cursor: pointer;
-    background-color:rgba(255, 255, 255, 0.167);
+    background-color: rgba(255, 255, 255, 0.167);
 }
 
-.calendar tr{
-    background-color:rgba(255, 255, 255, 0.541);
+.calendar-container .calendar tr {
+    background-color: rgba(255, 255, 255, 0.541);
     border: 1px solid #000000;
 }
 
-button{
+.calendar-container button {
     background-color: rgba(201, 250, 255, 0.721);
     height: 6%;
     width: 9%;
@@ -45,13 +39,13 @@ button{
     font-weight: bold;
 }
 
-button a{
+.calendar-container button a {
     color: black;
     text-decoration: none;
-    font-family: 'Raleway', sans-serif ;
+    font-family: 'Raleway', sans-serif;
 }
 
-.legend{
+.calendar-container .legend {
     width: 50%;
     height: 25%;
     background-color: rgba(201, 250, 255, 0.721);
@@ -59,9 +53,22 @@ button a{
     border-radius: 10%;
 }
 
-.legend  td{
+.calendar-container .legend td {
     width: 1%;
     background-color: aliceblue;
     text-align: justify;
-    font-family: 'Raleway', sans-serif ;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Prefijo único para el componente DayCell */
+.calendar-container .calendar .day-cell {
+    width: 40px;
+    height: 30px;
+    border: 1px solid #000000;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.167);
+}
+
+.calendar-container .calendar .day-cell:hover {
+    background-color: rgba(201, 250, 255, 0.721);
 }

@@ -1,4 +1,4 @@
-import { Style } from "@mui/icons-material";
+
 import Temas from "./tema";
 import './temas.css'
 const Distribuicion = ( )=>{
