@@ -1,57 +1,51 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  background: linear-gradient(to top, #bb18fd,#8fe3f1);
-}
-
+/* Registro.css */
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  margin-top: 0px;
+  padding: 100px;
+  
 }
 
 .content-container {
-  width: 100%;
-}
-
-.text-and-images-container {
+  margin-left: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+}
+
+.text-and-images-container {
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
 }
 
 .left-container,
 .right-container {
-  flex: 1;
+  flex: 1; /* Ocupa el 50% del espacio disponible en la pantalla */
   text-align: center;
 }
 
 .left-image,
 .right-image {
-  max-width: 50%;
-  max-height: 1000px;
+  max-width: 100%; /* Imágenes responsivas */
   height: auto;
-  margin-top: 400px;
 }
 
 .text-container {
-  text-align: center;
-  justify-content: center;
+  flex: 1; /* Ocupa el 50% del espacio disponible en la pantalla */
+  padding: 20px;
+}
+
+h1 {
+  font-size: 1.5rem; /* Tamaño del encabezado ajustado para dispositivos pequeños */
 }
 
 .buttons-container {
-  text-align: center;
+  display: flex;
+  flex-direction: column; /* Coloca los botones uno encima del otro en pantallas pequeñas */
   margin-top: 20px;
 }
 
-button {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #e705e7;
-  color: rgb(78, 29, 29);
-}
-.btn-primary {
-  background-color: purple;
+.btn {
+  width: 100%; /* Botones ocupan todo el ancho del contenedor */
+  margin-bottom: 10px;
 }

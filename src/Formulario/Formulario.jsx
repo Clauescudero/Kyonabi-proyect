@@ -19,7 +19,8 @@ export function Formulario({setUser}) {
     };
 
     return (
-        <section>
+        <div className="formRegistro">  
+            <section >
             <h1>Login</h1>
             <form className="Formulario" onSubmit={handleSubmit}>
                 <input
@@ -34,8 +35,9 @@ export function Formulario({setUser}) {
                 />
                 <button type="submit">Iniciar sesión</button>
             </form>
-            {error && <p>Todos los campos son obligatorios!</p>}
+            {error && <p id="error">Todos los campos son obligatorios!</p>}
         </section>
+        </div>
     );
 }
 
