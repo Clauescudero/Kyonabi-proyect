@@ -17,7 +17,7 @@ const Home = () => {
       <div className="card mb-3">
         <div className="row g-0">
           <div className="col-md-4">
-            <img src="imagenes/card1.png" className="img-fluid rounded-start" alt="Card 1" />
+            <img src="../assets/card1.png" className="img-fluid rounded-start" alt="Card 1" />
           </div>
           <div className="col-md-8">
             <div className="card-body">
@@ -33,7 +33,7 @@ const Home = () => {
       <div className="card mb-4">
         <div className="row g-0">
           <div className="col-md-4">
-            <img src="imagenes/Card2.png" className="img-fluid rounded-start" alt="Card 2" />
+            <img src="../assets/Card2.png" className="img-fluid rounded-start" alt="Card 2" />
           </div>
           <div className="col-md-8">
             <div className="card-body">
@@ -50,3 +50,10 @@ const Home = () => {
 };
 
 export default Home;
+
+
+
+
+
+
+

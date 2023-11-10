@@ -1,17 +1,24 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
     <nav className="navbar navbar-dark bg-dark fixed-top">
       <div className="container-fluid">
+        <Link to="/">
         <a className="navbar-brand" href="#">Kyonabi</a>
+        </Link>
         <div className="d-flex align-items-center">
-          <button type="button" className="btn btn-link px-3 me-2">
-            Ingresa
-          </button>
-          <button type="button" className="btn btn-primary me-3">
-            Registrate
-          </button>
+          <Link to="/Formulario">
+            <button type="button" className="btn btn-link px-3 me-2">
+              Ingresa
+            </button>
+          </Link>
+          <Link to="/Formulario">
+            <button type="button" className="btn btn-primary me-3">
+              Registrate
+            </button>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"

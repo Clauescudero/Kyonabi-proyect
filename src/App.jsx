@@ -16,6 +16,7 @@ import Suger from "./sugerencia/sugerencia";
 import Footer from "./Footer/Footer";
 import Distribuicion from "./contenidos/distri";
 import Formulario from "./Formulario/Formulario";
+import Docentes from "./docentes/docentes";
 
 function App() {
   return (
@@ -27,11 +28,13 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/registro' element={<Registro />} />
         <Route path='/Calendar' element={<Calendar />} />
-        <Route path='/Creatividad' element={<Creatividad />} />
-        <Route path='/Planificacion' element={<Planificacion />} />
+        <Route path='/Docentes' element={<Docentes />} />
+        <Route path='/Docentes/Planificacion' element={<Planificacion />} />
+        <Route path='Creatividad' element={<Creatividad />} />
         <Route path='/sugerencia' element={<Suger />} />
         <Route path='/contenidos' element={<Distribuicion />} />
         <Route path='/Formulario' element={<Formulario />} />
+        
 
       </Routes>
       <Footer />
