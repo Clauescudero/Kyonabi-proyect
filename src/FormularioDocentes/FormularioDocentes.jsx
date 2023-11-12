@@ -18,7 +18,7 @@ const FormularioDocentes = () => {
                         <input type="password" id="password" name="password" />
                         <label htmlFor="text">Repetir Contraseña</label>
                         <input type="password" id="Confirmarpassword" name="password" />
-                        <label htmlFor="aboutMe">Sobre Mí</label>
+                        <label htmlFor="aboutMe">Experiencia como Docente</label>
                         <textarea>
                     
                         </textarea>
