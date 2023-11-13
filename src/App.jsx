@@ -13,7 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Creatividad from "./creatividad/Creatividad";
 import Planificacion from "./planificacion/Planificacion"
-/*import MusicPlayer from "./Reproductor/Reproductor"*/
+// import MusicPlayer from "./Reproductor/Reproductor"
 import Suger from "./sugerencia/sugerencia";
 import Footer from "./Footer/Footer";
 import Distribuicion from "./contenidos/distri";
