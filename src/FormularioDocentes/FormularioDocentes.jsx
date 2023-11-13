@@ -1,7 +1,7 @@
 import React from "react";
-import './FormularioEstudiantes.css'
+import './FormularioDocentes.css'
 
-const FormularioEstudiantes = () => {
+const FormularioDocentes = () => {
     return (
         <div className="containers-registro">
             <div className="formulario-registro">
@@ -18,6 +18,10 @@ const FormularioEstudiantes = () => {
                         <input type="password" id="password" name="password" />
                         <label htmlFor="text">Repetir Contraseña</label>
                         <input type="password" id="Confirmarpassword" name="password" />
+                        <label htmlFor="aboutMe">Sobre Mí</label>
+                        <textarea>
+                    
+                        </textarea>
             
                     </div>
                     <div className="btn-container-registro">
@@ -28,5 +32,4 @@ const FormularioEstudiantes = () => {
         </div>
     )
 }
-
-export default FormularioEstudiantes;
+export default FormularioDocentes;
