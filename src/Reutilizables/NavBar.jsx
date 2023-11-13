@@ -9,12 +9,12 @@ const NavBar = () => {
         <a className="navbar-brand" href="#">Kyonabi</a>
         </Link>
         <div className="d-flex align-items-center">
-          <Link to="/Formulario">
+          <Link to="/Login">
             <button type="button" className="btn btn-link px-3 me-2">
               Ingresa
             </button>
           </Link>
-          <Link to="/Formulario">
+          <Link to="/Registro">
             <button type="button" className="btn btn-primary me-3">
               Registrate
             </button>
@@ -49,9 +49,11 @@ const NavBar = () => {
             <div className="offcanvas-body">
               <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">
+                  <Link to={'/'}>
+                    <a className="nav-link active" aria-current="page" href="#">
                     Home
-                  </a>
+                    </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">
@@ -70,14 +72,23 @@ const NavBar = () => {
                   </a>
                   <ul className="dropdown-menu dropdown-menu-dark">
                     <li>
-                      <a className="dropdown-item" href="#">
-                        Recursos
-                      </a>
+                      <Link to="/contenidos">
+                        <a className="dropdown-item" href="#">
+                          TEMAS
+                        </a>
+                      </Link>
                     </li>
                     <li>
                       <a className="dropdown-item" href="#">
                         Herramientas
                       </a>
+                    </li>
+                    <li>
+                      <Link to="/Calendar">
+                          <a className="dropdown-item" href="#">
+                            seguimiento emocional
+                          </a>
+                      </Link>
                     </li>
                     <li>
                       <hr className="dropdown-divider"></hr>
@@ -109,6 +120,13 @@ const NavBar = () => {
                       <hr className="dropdown-divider"></hr>
                     </li>
                   </ul>
+                </li>
+                <li>
+                  <Link to="/sugerencia">
+                      <a className="dropdown-item" href="#">
+                       <h6> Sugerencias</h6>
+                      </a>
+                  </Link>
                 </li>
               </ul>
               <form className="d-flex mt-3" role="search">
