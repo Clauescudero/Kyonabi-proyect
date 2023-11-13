@@ -1,5 +1,5 @@
 import React from "react";
-import './FormularioEstudiantes.css'
+import './FormularioEstudiante.css'
 
 const FormularioEstudiantes = () => {
     return (

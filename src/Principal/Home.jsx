@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className='Card-container'>
       <div className="card bg">
-        <img src="https://media.discordapp.net/attachments/1143374824299827302/1171586313850470410/Banner1.png?ex=655d37c8&is=654ac2c8&hm=fb4c93f98c5f521ea7986093d91881ca02450abb443aa72f9df132fc9a195740&=" className="card-img-banner" alt="Stony Beach" />
+        <img src="src\assets\Banner1.png" className="card-img-banner" alt="Stony Beach" />
         <div className="card-img-overlay">
           <h5 className="card-title-banner">¿Qué es Kyonabi?</h5>
           <p className="card-text">
@@ -17,7 +17,7 @@ const Home = () => {
       <div className="card mb-3">
         <div className="row g-0">
           <div className="col-md-4">
-            <img src="../assets/card1.png" className="img-fluid rounded-start" alt="Card 1" />
+            <img src="src\assets\card1.png" className="img-fluid rounded-start" alt="Card 1" />
           </div>
           <div className="col-md-8">
             <div className="card-body">
@@ -33,7 +33,7 @@ const Home = () => {
       <div className="card mb-4">
         <div className="row g-0">
           <div className="col-md-4">
-            <img src="../assets/Card2.png" className="img-fluid rounded-start" alt="Card 2" />
+            <img src="src\assets\Card2.png" className="img-fluid rounded-start" alt="Card 2" />
           </div>
           <div className="col-md-8">
             <div className="card-body">
