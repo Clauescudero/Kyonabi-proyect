@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from 'react';
 //import { Route, Routes } from 'react-router-dom';
+import MusicPlayer from './MusicPlayer/MusicPlayer';
 import NavBar from './Reutilizables/NavBar';
 import Home from './Principal/Home';
 import Calendar from './calendar/Calendar';
@@ -11,7 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Creatividad from "./creatividad/Creatividad";
 import Planificacion from "./planificacion/Planificacion"
-import MusicPlayer from "./Reproductor/Reproductor"
+/*import MusicPlayer from "./Reproductor/Reproductor"*/
 import Suger from "./sugerencia/sugerencia";
 import Footer from "./Footer/Footer";
 import Distribuicion from "./contenidos/distri";
@@ -19,6 +20,7 @@ import Formulario from "./Formulario/Formulario";
 import Docentes from "./docentes/docentes";
 
 function App() {
+  const audioSource = 'src/Music';
   return (
     <div className='App'>
       <header>
@@ -37,8 +39,12 @@ function App() {
         
 
       </Routes>
+     
       <Footer />
+      <MusicPlayer src= {audioSource}/>
+    
     </div>
+  
   );
 }
 
