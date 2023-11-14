@@ -5,7 +5,6 @@ import MusicPlayer from './MusicPlayer/MusicPlayer';
 import NavBar from './Reutilizables/NavBar';
 import Home from './Principal/Home';
 import Calendar from './calendar/Calendar';
-import DayCell from './calendar/DayCell'; 
 import Temas from "./contenidos/tema.jsx";
 import './App.css';
 import Registro from './Registro/Registro';
@@ -19,13 +18,15 @@ import Footer from "./Footer/Footer";
 import Distribuicion from "./contenidos/distri";
 import Login from "./Login/Login";
 import Docentes from "./docentes/docentes";
-import FormularioDocentes from "./FormularioDocentes/FormularioDocentes";
-import FormularioEstudiantes from './FormularioDocentes/FormularioDocentes.jsx'
+import FormularioDocentes from'./FormularioDocentes/FormularioDocentes';
+import FormularioEstudiantes from "./FormularioEstudiante/FormularioEstudiante";
+import Perfil from "./Perfil/PerfilEstudiante"
+
  
 function App() {
   const audioSource = 'src/Music';
   return (
-    <div className='App'>
+    <div className='App' >
       <header>
         <NavBar />
       </header>
@@ -38,15 +39,14 @@ function App() {
         <Route path='/Creatividad' element={<Creatividad />} />
         <Route path='/sugerencia' element={<Suger />} />
         <Route path='/contenidos' element={<Distribuicion />} />
+        <Route path='/Formulario' element={<Formulario />} />
+        <Route path='/Formulario-Docentes' element={<FormularioDocentes />} />
+        <Route path='/Formulario-Estudiantes' element={<FormularioEstudiantes />} />
+        <Route path='/Perfil' element={<Perfil />} />
         <Route path='/Login' element={<Login />} />
         <Route path='/contenidos' element={<Temas />} />
       <Route path="/Formulariodedocente" element={<FormularioDocentes />}/>
-    
-        
-        
-
       </Routes>
-     
       <Footer />
       <MusicPlayer src= {audioSource}/>
     

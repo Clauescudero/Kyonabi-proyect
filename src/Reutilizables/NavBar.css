@@ -1,11 +1,11 @@
 .navbar {
-    background-color: #eacefa;
-    padding: 1rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-  }
-  
+    background-color:rgb(62, 0, 98);
+    text-decoration: none;
+}
+
   .logo {
     width: 100px;
     height: auto;
