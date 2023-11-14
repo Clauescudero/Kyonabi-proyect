@@ -1,0 +1,35 @@
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+h1,
+h2,
+p {
+    color: #000000;
+}
+
+/* Estilos para la información del usuario */
+#user-profile {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Estilos para la imagen del usuario (puedes personalizar esto según tus necesidades) */
+#user-avatar {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 600px) {
+    #user-profile {
+        padding: 10px;
+    }
+}

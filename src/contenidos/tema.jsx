@@ -1,17 +1,22 @@
 import React from "react";
 import './temas.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
+export default function Temas({ temas, imagenes }) {
 
-
-export default function Temas  ({temas,imagenes}){
-
-    return(
+    return (
         <>
-    <div  className="relacionadas">
-     <h4>{temas}</h4> 
-     <div className="secion">
-     <img src={imagenes}  />
-     </div>
-    </div>
+        <div className="container-temas">
+            <div className="row">
+                <div className="relacionadas">
+                    <h2>{temas}</h2>
+                    <div className="secion">
+                        <img src={imagenes} />
+                    </div>
+                </div>
+            </div>
+        </div>
         </>
-        )}
+    )
+}

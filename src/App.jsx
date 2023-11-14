@@ -4,7 +4,6 @@ import React from 'react';
 import NavBar from './Reutilizables/NavBar';
 import Home from './Principal/Home';
 import Calendar from './calendar/Calendar';
-import DayCell from './calendar/DayCell'; 
 import './App.css';
 import Registro from './Registro/Registro';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,10 +16,13 @@ import Footer from "./Footer/Footer";
 import Distribuicion from "./contenidos/distri";
 import Formulario from "./Formulario/Formulario";
 import Docentes from "./docentes/docentes";
+import FormularioDocentes from'./FormularioDocentes/FormularioDocentes';
+import FormularioEstudiantes from "./FormularioEstudiante/FormularioEstudiante";
+import Perfil from "./Perfil/PerfilEstudiante"
 
 function App() {
   return (
-    <div className='App'>
+    <div className='App' >
       <header>
         <NavBar />
       </header>
@@ -34,8 +36,9 @@ function App() {
         <Route path='/sugerencia' element={<Suger />} />
         <Route path='/contenidos' element={<Distribuicion />} />
         <Route path='/Formulario' element={<Formulario />} />
-        
-
+        <Route path='/Formulario-Docentes' element={<FormularioDocentes />} />
+        <Route path='/Formulario-Estudiantes' element={<FormularioEstudiantes />} />
+        <Route path='/Perfil' element={<Perfil />} />
       </Routes>
       <Footer />
     </div>
