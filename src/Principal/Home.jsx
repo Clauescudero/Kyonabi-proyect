@@ -15,6 +15,7 @@ const Home = () => {
               Somos una comunidad de apoyo educativo en línea, reconocida por crear un ambiente idóneo para el intercambio de conocimientos, aprendizaje y desarrollo personal, buscando inspirar la creatividad y la autodeterminación con el fin de crear un mundo donde todas las niñas, niños y adolescentes tengan oportunidades de aprender.
             </p>
           </div>
+
         </div>
 
         <div className="card mb-3">
@@ -44,6 +45,7 @@ const Home = () => {
                   Que las niñas, niños y adolescentes continúen sus estudios a pesar de la deserción, que puedan tener el apoyo educativo y emocional necesario a través de nuestra plataforma web que no solo entregará contenido de estudio sino que también contará con voluntarios para dar clases y tutorías en línea.
                 </p>
               </div>
+
             </div>
           </div>
         </div>

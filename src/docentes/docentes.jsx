@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Docentes = () => {
     return (
@@ -9,6 +10,7 @@ const Docentes = () => {
                 <button>Planificación</button>
                 <button>¡Se un tutor voluntario!</button>
             </div>
+
         </div>
     );
 };

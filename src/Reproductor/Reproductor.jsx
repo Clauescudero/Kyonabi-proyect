@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/*import React, { useState } from 'react';
 
 const MusicPlayer = () => {
   const [currentSong, setCurrentSong] = useState(0);
@@ -32,4 +32,4 @@ const MusicPlayer = () => {
   );
 };
 
-export default MusicPlayer;
+export default MusicPlayer;*/

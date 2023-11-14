@@ -1,5 +1,6 @@
 import React from 'react';
 import './Registro.css';
+// import { Link } from 'react-router-dom';
 
 const Registro = () => {
   return (
@@ -19,6 +20,14 @@ const Registro = () => {
     fontWeight: 'bold'}}><a href="/Formulario-Estudiantes">Estudiante</a></button>
               <button className="btn btn-primary" style={{ backgroundColor: 'aliceblue', color:'black',fontSize: 'large',
     fontWeight: 'bold'}}><a href="/Formulario-Docentes">Docente</a></button>
+// =======
+//               <Link to="/Formulariodedocente">
+//               <button className="btn btn-primary me-2">Estudiante</button>
+//               </Link>
+//               <Link to="/Docentes">
+//               <button className="btn btn-primary">Docente</button>
+//               </Link>
+// >>>>>>> main
             </div>
           </div>
 
