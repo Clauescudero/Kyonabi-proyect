@@ -1,11 +1,8 @@
-import React from 'react';
-import './Creatividad.css';
-
-const Creatividad = () => {
+const Matematica = () => {
     return (
-        <div id="creatividad-container" className="Creatividad">
+        <div id="Matematica-container" className="contenidos-materiales">
           <div className='title-creatividad'>
-            <h1>Creatividad y Pensamiento Creativo</h1>
+            <h1>Matematicas</h1>
               <p>
                   El pensamiento creativo está muy valorado en nuestras sociedades, en las que la innovación y el cambio juegan un rol importante. En él intervienen la memoria, la inteligencia, la imaginación y otros procesos mentales complejos que conducen al pensamiento original.
               </p>
@@ -60,4 +57,4 @@ const Creatividad = () => {
       );
     };
 
-export default Creatividad;
+export default Matematica;

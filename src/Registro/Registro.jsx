@@ -16,7 +16,7 @@ const Registro = () => {
             <p>¿Cómo desea registrarse?</p>
 
             <div className="buttons-container">
-              <Link to="/Formulariodedocente">
+              <Link to="/formuralioestudiantil">
               <button className="btn btn-primary me-2">Estudiante</button>
               </Link>
               <Link to="/Docentes">

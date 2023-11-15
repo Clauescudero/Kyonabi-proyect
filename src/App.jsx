@@ -10,7 +10,7 @@ import './App.css';
 import Registro from './Registro/Registro';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import Creatividad from "./creatividad/Creatividad";
+import Creatividad from "./contenidos-principales/creatividad/Creatividad.jsx";
 import Planificacion from "./planificacion/Planificacion"
 import MusicPlayer from "./Reproductor/Reproductor"
 import Suger from "./sugerencia/sugerencia";
@@ -20,7 +20,14 @@ import Login from "./Login/Login";
 import Docentes from "./docentes/docentes";
 import FormularioDocentes from "./FormularioDocentes/FormularioDocentes";
 import FormularioEstudiantes from './FormularioDocentes/FormularioDocentes.jsx'
- 
+import Ciencias from "./contenidos-principales/ciencia/ciencias.jsx";
+import Historia from "./contenidos-principales/historia/Historia.jsx";
+import Matematica from "./contenidos-principales/matematicas/matematicas.jsx";
+ import Idiomas from "./contenidos-principales/idiomas/idiomas.jsx";
+ import Tecnologia from "./contenidos-principales/tecnologia/tecnologia.jsx";
+ import Skills from "./contenidos-principales/skills/skills.jsx";
+ import Economia from "./contenidos-principales/economia/economia.jsx";
+ import Colaboradores from "./colaboradores/colabora.jsx";
 function App() {
   return (
     <div className='App'>
@@ -38,13 +45,22 @@ function App() {
         <Route path='/contenidos' element={<Distribuicion />} />
         <Route path='/Login' element={<Login />} />
         <Route path='/contenidos' element={<Temas />} />
+        <Route path='/formuralioestudiantil' element={<FormularioEstudiantes />} />
       <Route path="/Formulariodedocente" element={<FormularioDocentes />}/>
-    
-        
-        
+      <Route path="/ciencia" element={<Ciencias />}/>
+      <Route path="/habilidadesblandas" element={<Skills />}/>
+      <Route path="/idiomas" element={<Idiomas/>}/>
+      <Route path="/Tecnologia" element={<Tecnologia/>}/>
+      <Route path="/Historia" element={<Historia/>}/>
+      <Route path="/Economia" element={<Economia/>}/>
+      <Route path="/matematica" element={<Matematica/>}/>
+      <Route path="/Colaboradores"  element={<Colaboradores />}/>
 
+      
+        
+        
       </Routes>
-      <Footer />
+      <Footer  />
     </div>
   );
 }
