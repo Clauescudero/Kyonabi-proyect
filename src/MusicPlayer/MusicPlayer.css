@@ -1,0 +1,15 @@
+.PlayerContainer {
+    width: 100%;
+    text-align: left;
+    font: 1em sans-serif;
+    font-size: small;
+  }
+  
+
+.PlayerContainer h2 {
+    font-family: 'YourDesiredFont', 'Franklin Gothic Medium';
+    font-size: 24px; 
+    color: rgb(255, 255, 255);
+  }
+  
+  

@@ -1,21 +1,28 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-dark bg-dark fixed-top">
+    <nav  style={{ backgroundColor:'rgb(62, 0, 98)', height:'5rem' }} className="navbar navbar-dark  fixed-top">
       <div className="container-fluid">
         <Link to="/">
-        <a className="navbar-brand" href="#">Kyonabi</a>
+        <a className="navbar-brand" href="/">Kyonabi</a>
         </Link>
         <div className="d-flex align-items-center">
-          <Link to="/Login">
-            <button type="button" className="btn btn-link px-3 me-2">
+          <Link to="/Formulario">
+            <button type="button" style={{ backgroundColor:'#6a00a7' }} className="btn btn-dark me-3">
+// =======
+//           <Link to="/Login">
+//             <button type="button" className="btn btn-link px-3 me-2">
+// >>>>>>> main
               Ingresa
             </button>
           </Link>
           <Link to="/Registro">
-            <button type="button" className="btn btn-primary me-3">
+//             <button type="button" style={{ backgroundColor:'#6a00a7' }} className="btn btn-dark me-3">
+// =======
+//             <button type="button" className="btn btn-primary me-3">
+// >>>>>>> main
               Registrate
             </button>
           </Link>
@@ -27,7 +34,7 @@ const NavBar = () => {
             aria-controls="offcanvasDarkNavbar"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span style={{ backgroundColor:'rgb(62, 0, 98)' }} className="navbar-toggler-icon"></span>
           </button>
           <div
             className="offcanvas offcanvas-end text-bg-dark"
@@ -35,7 +42,7 @@ const NavBar = () => {
             id="offcanvasDarkNavbar"
             aria-labelledby="offcanvasDarkNavbarLabel"
           >
-            <div className="offcanvas-header">
+            <div style={{ backgroundColor:'#6a00a7' }}  className="offcanvas-header">
               <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">
                 Menu
               </h5>
@@ -46,7 +53,7 @@ const NavBar = () => {
                 aria-label="Close"
               ></button>
             </div>
-            <div className="offcanvas-body">
+            <div style={{ backgroundColor:'rgb(62, 0, 98)' }} className="offcanvas-body">
               <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li className="nav-item">
                   <Link to={'/'}>
