@@ -1,11 +1,10 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import React from 'react';
 //import { Route, Routes } from 'react-router-dom';
 import MusicPlayer from './MusicPlayer/MusicPlayer';
 import NavBar from './Reutilizables/NavBar';
 import Home from './Principal/Home';
 import Calendar from './calendar/Calendar';
-import DayCell from './calendar/DayCell'; 
 import './App.css';
 import Registro from './Registro/Registro';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,6 +17,7 @@ import Footer from "./Footer/Footer";
 import Distribuicion from "./contenidos/distri";
 import Formulario from "./Formulario/Formulario";
 import Docentes from "./docentes/docentes";
+import Equipo from "./Equipo/Equipo"; 
 
 function App() {
   const audioSource = 'src/Music';
@@ -36,7 +36,7 @@ function App() {
         <Route path='/sugerencia' element={<Suger />} />
         <Route path='/contenidos' element={<Distribuicion />} />
         <Route path='/Formulario' element={<Formulario />} />
-        
+        <Route path='/Equipo' element={<Equipo />} />
 
       </Routes>
      
