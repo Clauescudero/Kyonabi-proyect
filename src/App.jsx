@@ -7,6 +7,7 @@ import Home from './Principal/Home';
 import Calendar from './calendar/Calendar';
 import './App.css';
 import Registro from './Registro/Registro';
+import Temas from "./contenidos/tema.jsx";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Creatividad from "./creatividad/Creatividad";
@@ -18,6 +19,16 @@ import Distribuicion from "./contenidos/distri";
 import Formulario from "./Formulario/Formulario";
 import Docentes from "./docentes/docentes";
 import Equipo from "./Equipo/Equipo"; 
+
+
+
+
+import FormularioDocentes from './FormularioDocentes/FormularioDocentes';
+import FormularioEstudiantes from './FormularioEstudiante/FormularioEstudiante';
+import Perfil from "./Perfil/PerfilEstudiante";
+
+
+
 
 function App() {
   const audioSource = 'src/Music';
@@ -37,7 +48,12 @@ function App() {
         <Route path='/contenidos' element={<Distribuicion />} />
         <Route path='/Formulario' element={<Formulario />} />
         <Route path='/Equipo' element={<Equipo />} />
-
+        <Route path='/Formulario-Docentes' element={<FormularioDocentes />} />
+        <Route path='/Formulario-Estudiantes' element={<FormularioEstudiantes />} />
+        <Route path='/Perfil' element={<Perfil />} />
+        <Route path='/Login' element={<Login />} />
+        <Route path='/contenidos' element={<Temas />} />
+        <Route path="/Formulariodedocente" element={<FormularioDocentes />}/>
       </Routes>
      
       <Footer />
