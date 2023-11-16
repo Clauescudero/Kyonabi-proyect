@@ -3,50 +3,73 @@ import Tarjetatutores from './TarjetaTutores';
 import './Tutores.css';
 
 const NuestrosTutores = () => {
+  
   const tutores = [
     {
-      nombre: 'Sebastian Carrasco',
+      nombre: 'Priscila Carrasco',
       edad: 35,
-      experiencia: '8 años',
-      fotoURL: 'data:image/jpeg;base64,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',
+      experiencia: 'Ciencia, 10 años',
+      fotoURL: 'src/assets/Tutor-ciencia.png',
     },
     {
-        nombre: 'Darren Watkins',
+        nombre: 'Diana Rodríguez ',
         edad: 38,
-        experiencia: '10 años',
-        fotoURL: 'https://www.famousbirthdays.com/faces/watkins-darren-image.jpg',
+        experiencia: 'Creatividad, 15 años',
+        fotoURL: 'src/assets/Tutor-creatividad.png',
       },
       {
-        nombre: 'Juan Perez',
+        nombre: 'Javier Rocha ',
+        edad: 40,
+        experiencia: 'Economía, 20 años',
+        fotoURL: 'src/assets/Tutor-economia.png',
+      },
+      {
+        nombre: 'Ignacia Vergara',
+        edad: 27,
+        experiencia: 'Habilidades blandas, 8 años',
+        fotoURL: 'src/assets/Tutor-habilidades.png',
+      },
+      {
+        nombre: 'Ana Lindao',
         edad: 30,
-        experiencia: '6 años',
-        fotoURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUTWps-a1lDApFzk1QmCMPWdyX5tzFtpHpoA&usqp=CAU',
+        experiencia: 'Historia, 7 años',
+        fotoURL: 'src/assets/Tutor-historia.png',
       },
+
+
       {
-        nombre: 'Ignacio Vergara',
+        nombre: 'Cristina Smith',
         edad: 25,
-        experiencia: '3 años',
-        fotoURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ0WJGXTFcXCUFs70i4tzVW1LW468qlNy8yg&usqp=CAU',
-      },
-      {
-        nombre: 'Alexis Toro',
-        edad: 26,
-        experiencia: '4 años',
-        fotoURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrKrNg4iT5q3OHV-6eOinZKEowuyte8mj7xg&usqp=CAU',
+        experiencia: 'Idiomas, 5 años',
+        fotoURL: 'src/assets/Tutor-idiomas.png',
       },
 
+      {
+        nombre: 'Jose García',
+        edad: 38,
+        experiencia: 'Matemática, 15 años',
+        fotoURL: 'src/assets/Tutor-matematica.png',
+      },
 
       {
-        nombre: 'Cristiano Ronaldo',
+        nombre: 'Emilia Bustamante',
+        edad: 28,
+        experiencia: 'Recursos, 6 años',
+        fotoURL: 'src/assets/Tutor-recursos.png',
+      },
+
+      {
+        nombre: 'Linda Brown',
         edad: 30,
-        experiencia: '6 años',
-        fotoURL: 'https://www.realmadrid.com/img/vertical_380px/cristiano_550x650_20180917025046.jpg',
+        experiencia: 'Tecnología, 8 años',
+        fotoURL: 'src/assets/tutor-tecnologia.png',
       },
 
 
   ];
 
   return (
+    
     <div className="nuestros-tutores">
       {tutores.map((tutor, index) => (
         <Tarjetatutores key={index} {...tutor} />
