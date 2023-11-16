@@ -18,6 +18,7 @@ import Docentes from "./docentes/docentes";
 import FormularioDocentes from "./FormularioDocentes/FormularioDocentes.jsx";
 import FormularioEstudiantes from "./FormularioEstudiante/FormularioEstudiante.jsx";
 import NuestrosTutores from "./NuestrosTutores/NuestrosTutores.jsx";
+import Colaboradores from "./colaboradores/colabora.jsx";
 
 function App () {
   const audioSource = 'src/Music';
@@ -40,6 +41,8 @@ function App () {
         <Route path="/FormularioEstudiante" element={<FormularioEstudiantes />}/>
         <Route path="/Login" element={<Login />} />
         <Route path="/Tutores" element={<NuestrosTutores/>}></Route>
+        <Route path="/Colaboradores" element={<Colaboradores/>}></Route>
+
       </Routes>
       <MusicPlayer src= {audioSource}></MusicPlayer> 
       <Footer />
