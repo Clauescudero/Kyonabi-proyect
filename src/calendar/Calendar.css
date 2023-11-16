@@ -2,7 +2,11 @@
 .calendar-container {
     margin-top: 100px;
     margin-bottom: 100px;
+    text-align: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .calendar-container .calendar {
@@ -14,51 +18,45 @@
 }
 
 .calendar-container .calendar td {
-    width: 2rem;
-    height: 10%;
+    width: 40px;
+    height: 30px;
     border: 1px solid #000000;
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.167);
 }
 
-.calendar-container .calendar td tr{
-    width: 2rem;
-    height: 2rem;
-}
-
-
 .calendar-container .calendar tr {
     background-color: rgba(255, 255, 255, 0.541);
     border: 1px solid #000000;
-
 }
 
-.boton-perfil button {
-    border: 1px solid #000000;
-    text-align: center;
+.calendar-container button {
+    background-color: rgba(201, 250, 255, 0.721);
+    height: 6%;
+    width: 9%;
+    border-radius: 20%;
     font-size: large;
     font-weight: bold;
-    white-space: nowrap; 
-    max-width: 25%;
-    display:flex;
 }
 
-.boton-perfil button a {
+.calendar-container button a {
     color: black;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
-} 
+}
 
 .calendar-container .legend {
-    margin-top: 4rem;
-    border: 1px solid #000000;
+    width: 50%;
+    height: 25%;
     background-color: rgba(201, 250, 255, 0.721);
-    padding: 4%;
+    padding: 2%;
+    border-radius: 10%;
 }
 
 .calendar-container .legend td {
     width: 1%;
     background-color: aliceblue;
+    text-align: justify;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -71,6 +69,6 @@
     background-color: rgba(255, 255, 255, 0.167);
 }
 
-/* .calendar-container .calendar .day-cell:hover {
+.calendar-container .calendar .day-cell:hover {
     background-color: rgba(201, 250, 255, 0.721);
-} */
+}

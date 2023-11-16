@@ -1,15 +1,12 @@
 .btn btn-link px-3 me-2 {
   background-color: #ffffff;
 }
-
-.container-home{
-display: flex;}
-
 .Card-container{
   display:flex;
   justify-content: center;
   flex-direction: column;
 }
+
 
 .card{
   background-color: #ffffff;
@@ -23,6 +20,7 @@ display: flex;}
   margin-top: 100px;
   display:flex
 }
+
 
 .card-title-banner {
   font-size: 70px;

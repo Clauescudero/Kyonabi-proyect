@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Registro = () => {
   return (
-    <div className="container-regis">
+    <div className="container">
       <div className="content-container">
         <div className="text-and-images-container">
           <div className="left-container">
@@ -16,6 +16,7 @@ const Registro = () => {
             <p>¿Cómo desea registrarse?</p>
 
             <div className="buttons-container">
+<<<<<<< HEAD
               <Link to="/formuralioestudiantil">
               <button className="btn btn-primary me-2">Estudiante</button>
               </Link>
@@ -27,6 +28,10 @@ const Registro = () => {
               <button className="btn btn-primary" style={{ backgroundColor: 'aliceblue', color:'black',fontSize: 'large',
     fontWeight: 'bold'}}><a href="/Formulario-Docentes">Docente</a></button>
 
+=======
+              <button className="btn btn-primary me-2">Estudiante</button>
+              <button className="btn btn-primary">Docente</button>
+>>>>>>> parent of 02c4007 (medio-responsivo)
             </div>
           </div>
 

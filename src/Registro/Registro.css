@@ -1,15 +1,15 @@
 /* Registro.css */
-.container-regis {
+.container {
   margin-top: 0px;
   padding: 100px;
+  
 }
 
 .content-container {
+  margin-left: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image:radial-gradient( #18ecdbc8,rgb(167, 246, 255), rgba(255, 255, 255, 0.374));
-  border-radius: 30px;
 }
 
 .text-and-images-container {
@@ -33,24 +33,16 @@
 .text-container {
   flex: 1; /* Ocupa el 50% del espacio disponible en la pantalla */
   padding: 20px;
-  font-size: large;
-  font-weight: bold;
-  text-align: center;
 }
 
 h1 {
-  font-size: 2.5rem; /* Tamaño del encabezado ajustado para dispositivos pequeños */
+  font-size: 1.5rem; /* Tamaño del encabezado ajustado para dispositivos pequeños */
 }
 
 .buttons-container {
   display: flex;
   flex-direction: column; /* Coloca los botones uno encima del otro en pantallas pequeñas */
   margin-top: 20px;
-  text-decoration: black;
-}
-
-a{
-  text-decoration: none;
 }
 
 .btn {

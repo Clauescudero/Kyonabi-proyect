@@ -5,7 +5,7 @@ const FormularioDocentes = () => {
     return (
         <div className="containers-registro">
             <div className="formulario-registro">
-                <h1>¡Bienvenido a Kyonabi!</h1>
+                <h1>Bienvenido a Kyonabi!</h1>
                 <form action="">
                     <div className="usuario-registro">
                         <label htmlFor="text">Nombre de usuario</label>
@@ -18,7 +18,7 @@ const FormularioDocentes = () => {
                         <input type="password" id="password" name="password" />
                         <label htmlFor="text">Repetir Contraseña</label>
                         <input type="password" id="Confirmarpassword" name="password" />
-                        <label htmlFor="aboutMe">Experiencia como Tutor</label>
+                        <label htmlFor="aboutMe">Sobre Mí</label>
                         <textarea>
                     
                         </textarea>
