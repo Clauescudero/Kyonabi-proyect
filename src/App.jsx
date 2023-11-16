@@ -38,10 +38,8 @@ function App () {
         <Route path='/Registro' element={<Registro />} />
         <Route path="/Formulariodocente" element={<FormularioDocentes />}/>
         <Route path="/FormularioEstudiante" element={<FormularioEstudiantes />}/>
-        <Route path="Ingreso" element={<Login />} />
-        <Route path="Tutores" element={<NuestrosTutores/>}></Route>
-        
-
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Tutores" element={<NuestrosTutores/>}></Route>
       </Routes>
       <Footer />
       <MusicPlayer src= {audioSource}></MusicPlayer> */

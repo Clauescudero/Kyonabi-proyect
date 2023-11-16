@@ -6,12 +6,12 @@
     align-items: center;
     justify-content: center;
     padding-top: 100px;
-    
-   
 }
+
 .seccion-sugerencia-text{
     text-align: center;
     color: white;
+    font-weight: bold;
 }
 
 .input{

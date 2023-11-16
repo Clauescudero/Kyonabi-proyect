@@ -27,13 +27,13 @@ export function Login({setUser}) {
                     type='text'
                     value={nombre}
                     onChange={(e) => setNombre(e.target.value)}
-                    placeholder="ingresa usuario"
+                    placeholder="Ingrese el usuario"
                 />
                 <input
                     type='password'
                     value={contraseña}
                     onChange={(e) => setContraseña(e.target.value)}
-                    placeholder="ingresa contraseña"
+                    placeholder="Ingresa la contraseña"
                 />
                 <button type="submit">Iniciar sesión</button>
             </form>
