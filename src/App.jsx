@@ -41,8 +41,8 @@ function App () {
         <Route path="/Login" element={<Login />} />
         <Route path="/Tutores" element={<NuestrosTutores/>}></Route>
       </Routes>
+      <MusicPlayer src= {audioSource}></MusicPlayer> 
       <Footer />
-      <MusicPlayer src= {audioSource}></MusicPlayer> */
     </div>
   
   );
