@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
@@ -9,20 +9,20 @@ const NavBar = () => {
         <a className="navbar-brand" href="/">Kyonabi</a>
         </Link>
         <div className="d-flex align-items-center">
-          <Link to="/Formulario">
-            <button type="button" style={{ backgroundColor:'#6a00a7' }} className="btn btn-dark me-3">
-// =======
-//           <Link to="/Login">
-//             <button type="button" className="btn btn-link px-3 me-2">
-// >>>>>>> main
+          <Link to="/Formulario"> </Link>
+            <button type="button" style={{ backgroundColor:'#6a00a7' }} className="btn btn-dark me-3"> </button>
+
+          <Link to="/Login">
+            <button type="button" className="btn btn-link px-3 me-2">
+
               Ingresa
             </button>
           </Link>
           <Link to="/Registro">
-//             <button type="button" style={{ backgroundColor:'#6a00a7' }} className="btn btn-dark me-3">
-// =======
-//             <button type="button" className="btn btn-primary me-3">
-// >>>>>>> main
+            <button type="button" style={{ backgroundColor:'#6a00a7' }} className="btn btn-dark me-3"></button>
+
+            <button type="button" className="btn btn-primary me-3">
+
               Registrate
             </button>
           </Link>

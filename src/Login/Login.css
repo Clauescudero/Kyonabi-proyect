@@ -1,6 +1,3 @@
-/* Formulario.css */
-
-/* Estilos generales */
 .formRegistro {
     padding: 200px;
 }
@@ -20,7 +17,7 @@ section {
     align-items: center;
   }
   
-  /* Estilos para los campos de entrada */
+
   input {
     width: 100%;
     padding: 10px;
@@ -30,7 +27,7 @@ section {
     box-sizing: border-box;
   }
   
-  /* Estilos para el botón de enviar */
+
   button {
     background-color: #bb18fd;
     color: white;
@@ -40,13 +37,12 @@ section {
     cursor: pointer;
   }
   
-  /* Estilos para mensajes de error */
+
   #error p {
     color: red;
     margin-top: 10px;
   }
-  
-  /* Estilos responsivos */
+
   @media (min-width: 768px) {
     h1 {
       font-size: 32px;
@@ -63,6 +59,4 @@ section {
       max-width: 600px;
     }
   }
-  
-  /* Ajusta los estilos responsivos según sea necesario */
   
