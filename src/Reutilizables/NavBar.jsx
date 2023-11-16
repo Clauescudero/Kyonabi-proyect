@@ -9,30 +9,13 @@ const NavBar = () => {
         <a className="navbar-brand" href="#">Kyonabi</a>
         </Link>
         <div className="d-flex align-items-center">
-<<<<<<< HEAD
-          <Link to="/Formulario"> </Link>
-            <button type="button" style={{ backgroundColor:'#6a00a7' }} className="btn btn-dark me-3"> </button>
-
-          <Link to="/Login">
+          <Link to="/Ingreso">
             <button type="button" className="btn btn-link px-3 me-2">
-
               Ingresa
             </button>
           </Link>
           <Link to="/Registro">
-            <button type="button" style={{ backgroundColor:'#6a00a7' }} className="btn btn-dark me-3"></button>
-
             <button type="button" className="btn btn-primary me-3">
-
-=======
-          <Link to="/Formulario">
-            <button type="button" className="btn btn-link px-3 me-2">
-              Ingresa
-            </button>
-          </Link>
-          <Link to="/Formulario">
-            <button type="button" className="btn btn-primary me-3">
->>>>>>> parent of 02c4007 (medio-responsivo)
               Registrate
             </button>
           </Link>
@@ -129,9 +112,11 @@ const NavBar = () => {
                       </a>
                     </li>
                     <li>
+                    <Link to="/sugerencia">
                       <a className="dropdown-item" href="#">
                         Quiero ser voluntario
                       </a>
+                      </Link>
                     </li>
                     <li>
                       <hr className="dropdown-divider"></hr>

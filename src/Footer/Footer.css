@@ -2,7 +2,10 @@
 #miFooter .columnas-miApp {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
+  color: black;
+  margin-top: 30px;
+  
 }
 
 ul {

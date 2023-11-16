@@ -14,33 +14,33 @@ const NuestrosTutores = () => {
         nombre: 'Darren Watkins',
         edad: 38,
         experiencia: '10 años',
-        fotoURL: 'url_de_la_foto_juan',
+        fotoURL: 'https://www.famousbirthdays.com/faces/watkins-darren-image.jpg',
       },
       {
         nombre: 'Juan Perez',
         edad: 30,
         experiencia: '6 años',
-        fotoURL: 'url_de_la_foto_juan',
+        fotoURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUTWps-a1lDApFzk1QmCMPWdyX5tzFtpHpoA&usqp=CAU',
       },
       {
-        nombre: 'Diego Lopez',
-        edad: 30,
+        nombre: 'Ignacio Vergara',
+        edad: 25,
         experiencia: '3 años',
-        fotoURL: 'url_de_la_foto_juan',
+        fotoURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ0WJGXTFcXCUFs70i4tzVW1LW468qlNy8yg&usqp=CAU',
       },
       {
-        nombre: 'Diego Lopez',
-        edad: 30,
-        experiencia: '3 años',
-        fotoURL: 'url_de_la_foto_juan',
+        nombre: 'Alexis Toro',
+        edad: 26,
+        experiencia: '4 años',
+        fotoURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrKrNg4iT5q3OHV-6eOinZKEowuyte8mj7xg&usqp=CAU',
       },
 
 
       {
-        nombre: 'Diego Lopez',
+        nombre: 'Cristiano Ronaldo',
         edad: 30,
-        experiencia: '3 años',
-        fotoURL: 'url_de_la_foto_juan',
+        experiencia: '6 años',
+        fotoURL: 'https://www.realmadrid.com/img/vertical_380px/cristiano_550x650_20180917025046.jpg',
       },
 
 

@@ -4,18 +4,20 @@ import MusicPlayer from './MusicPlayer/MusicPlayer';
 import NavBar from './Reutilizables/NavBar';
 import Home from './Principal/Home';
 import Calendar from './calendar/Calendar';
-import DayCell from './calendar/DayCell'; 
 import './App.css';
 import Registro from './Registro/Registro';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import Creatividad from "./contenidos-principales/creatividad/Creatividad.jsx";
+// import Creatividad from "./contenidos-principales/creatividad/Creatividad.jsx";
 import Planificacion from "./planificacion/Planificacion"
 import Suger from "./sugerencia/sugerencia";
 import Footer from "./Footer/Footer";
 import Distribuicion from "./contenidos/distri";
 import Login from "./Login/Login";
 import Docentes from "./docentes/docentes";
+import FormularioDocentes from "./FormularioDocentes/FormularioDocentes.jsx";
+import FormularioEstudiantes from "./FormularioEstudiante/FormularioEstudiante.jsx";
+import NuestrosTutores from "./NuestrosTutores/NuestrosTutores.jsx";
 
 function App () {
   const audioSource = 'src/Music';
@@ -30,10 +32,14 @@ function App () {
         <Route path='/Calendar' element={<Calendar />} />
         <Route path='/Docentes' element={<Docentes />} />
         <Route path='/Docentes/Planificacion' element={<Planificacion />} />
-        <Route path='Creatividad' element={<Creatividad />} />
+        {/* <Route path='Creatividad' element={<Creatividad />} /> */}
         <Route path='/sugerencia' element={<Suger />} />
         <Route path='/contenidos' element={<Distribuicion />} />
-        <Route path='/Formulario' element={<Formulario />} />
+        <Route path='/Registro' element={<Registro />} />
+        <Route path="/Formulariodocente" element={<FormularioDocentes />}/>
+        <Route path="/FormularioEstudiante" element={<FormularioEstudiantes />}/>
+        <Route path="Ingreso" element={<Login />} />
+        <Route path="Tutores" element={<NuestrosTutores/>}></Route>
         
 
       </Routes>

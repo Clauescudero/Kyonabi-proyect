@@ -16,22 +16,12 @@ const Registro = () => {
             <p>¿Cómo desea registrarse?</p>
 
             <div className="buttons-container">
-<<<<<<< HEAD
-              <Link to="/formuralioestudiantil">
+              <Link to="/FormularioEstudiante">
               <button className="btn btn-primary me-2">Estudiante</button>
               </Link>
-              <Link to="/Docentes">
+              <Link to="/Formulariodocente">
               <button className="btn btn-primary">Docente</button>
               </Link>
-              <button className="btn btn-primary me-2" style={{ backgroundColor: 'aliceblue', color:'black',fontSize: 'large',
-    fontWeight: 'bold'}}><a href="/Formulario-Estudiantes">Estudiante</a></button>
-              <button className="btn btn-primary" style={{ backgroundColor: 'aliceblue', color:'black',fontSize: 'large',
-    fontWeight: 'bold'}}><a href="/Formulario-Docentes">Docente</a></button>
-
-=======
-              <button className="btn btn-primary me-2">Estudiante</button>
-              <button className="btn btn-primary">Docente</button>
->>>>>>> parent of 02c4007 (medio-responsivo)
             </div>
           </div>
 
