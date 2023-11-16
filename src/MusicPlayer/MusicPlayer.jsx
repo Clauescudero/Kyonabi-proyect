@@ -5,12 +5,10 @@ import './MusicPlayer.css';
 
 
 const PlayerContainer = styled.div`
-position: fixed;
-  left: 0;
+  position: fixed;
   right: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgba(254, 255, 255, 0.3);
   color: white;
   border-radius: 2px;
   padding: 5px;
@@ -24,7 +22,7 @@ const Title = styled.h2`
 
 const MusicPlayer = ({ src }) => {
   return (
-    <PlayerContainer className="PlayerContainer"> 
+    <PlayerContainer style={{width:'50%', marginTop:'0px'}} className="PlayerContainer"> 
       <Title>Estudiemos con Música</Title>
       
       <ReactAudioPlayer
