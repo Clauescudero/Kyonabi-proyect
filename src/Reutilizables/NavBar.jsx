@@ -83,7 +83,7 @@ const NavBar = () => {
                       </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="/herramientas">
                         Herramientas
                       </a>
                     </li>
