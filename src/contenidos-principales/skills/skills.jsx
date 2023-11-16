@@ -4,7 +4,7 @@ const Skills = () => {
           <div className='title-creatividad'>
             <h1>Habilidades Blandas</h1>
               <p>
-                  El pensamiento creativo está muy valorado en nuestras sociedades, en las que la innovación y el cambio juegan un rol importante. En él intervienen la memoria, la inteligencia, la imaginación y otros procesos mentales complejos que conducen al pensamiento original.
+              Las habilidades blandas o Soft Skills son un conjunto de competencias que van más allá de nuestros conocimientos técnicos y académicos. Son las cualidades personales que nos definen como individuos y nos permiten relacionarnos de manera efectiva con los demás en diferentes situaciones.
               </p>
           </div>
           <div className="main-content">
