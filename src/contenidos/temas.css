@@ -5,8 +5,9 @@
     border: none ;
     width: 150px;
     height: 200px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode';
-    font-style:oblique;
+    font-family:'YourDesiredFont', 'Franklin Gothic Medium';
+    color: rgb(255, 255, 255);
+    font-style:0;
     border-radius: 10px;
     cursor: pointer;
     position: relative;
@@ -21,7 +22,7 @@ transition: .3s
 }
 .relacionadas:hover{
     cursor: pointer;
-    color: #000000;
+    color: #84e4e4;
     transition:3.s ;
 }
 .relacionadas:active{
@@ -38,13 +39,13 @@ transition: .3s
             150px,1fr
         )
     );
-    gap: 16px;
+    gap: 20px;
     padding: 100px;
 }
 
 .secion img{
-    width: 140px;
+    width: 150px;
     height: 150px;
-    border-radius: 7px;
+    border-radius: 10px;
 
 }

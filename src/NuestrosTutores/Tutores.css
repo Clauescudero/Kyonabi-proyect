@@ -1,42 +1,35 @@
+
 .tutor-card {
   display: flex;
-  flex-direction: column;
   align-items: center;
   padding: 15px;
   border: 1px solid #ddd;
   margin: 10px;
-  max-width: 300px;
+  width: 600px; /* Ancho de la tarjeta */
   background: white;
   border-radius: 10px;
-  margin-top: 90px;
-  @media (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 600px;
-  }
+}
 
-  .tutor-photo {
-    margin-bottom: 5px;
+.tutor-photo {
+  margin-right: 15px;
+}
 
-    img {
-      max-width: 10%;
-      height: auto;
-      border-radius: 25%;
-      object-fit: cover;
-    }
-  }
+.tutor-photo img {
+  border-radius: 50%; 
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
 
-  .tutor-info {
-    text-align: center;
-
-    @media (min-width: 768px) {
-      text-align: left;
-    }
-  }
+.tutor-info {
+  text-align: left;
+  font-size: 23px;
+  margin-left: 20px;
 }
 
 .nuestros-tutores {
+  margin-top: 150px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content:flex-start; 
 }
