@@ -4,7 +4,7 @@ const Idiomas = () => {
           <div className='title-creatividad'>
             <h1>Idioma</h1>
               <p>
-                  El pensamiento creativo está muy valorado en nuestras sociedades, en las que la innovación y el cambio juegan un rol importante. En él intervienen la memoria, la inteligencia, la imaginación y otros procesos mentales complejos que conducen al pensamiento original.
+              Un idioma o lengua es el código lingüístico empleado por un pueblo o una nación para comunicarse, y que refleja de algún modo su historia cultural y su concepción del mundo.
               </p>
           </div>
           <div className="main-content">
