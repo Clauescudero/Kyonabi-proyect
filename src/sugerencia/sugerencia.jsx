@@ -4,7 +4,7 @@ const Suger = () => {
   return (
     <>
 
-      <div className='formurario'>
+      <div className='formulario'>
         <section className='seccion-sugerencia-text'>
           <h1>Sugerencias</h1>
           <div>

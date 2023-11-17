@@ -1,11 +1,11 @@
 import './ciencias.css'
 const Ciencias = () => {
     return (
-        <div id="creatividad-container" className="contenidos-materiales">
+        <div id="ciencias-container" className="contenidos-materiales">
           <div className='title-creatividad'>
             <h1>Ciencias</h1>
               <p>
-                  El pensamiento creativo está muy valorado en nuestras sociedades, en las que la innovación y el cambio juegan un rol importante. En él intervienen la memoria, la inteligencia, la imaginación y otros procesos mentales complejos que conducen al pensamiento original.
+              Las Ciencias son un conjunto de conocimientos relacionados con las matemáticas, la física, la química, la biología y la geología y otras materias que obedecen a leyes matemáticas y físicas.
               </p>
           </div>
           <div className="main-content">

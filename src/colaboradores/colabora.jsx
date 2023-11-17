@@ -9,8 +9,8 @@ const Colaboradores = ()=>{
             <div className="container">
                 <section>
                 <div id="img-colabo-1">
-                    <Link href="https://chile.generation.org/#picker">
-                        <img src="src\assets\generatio-chile.jpg " alt="" />
+                    <Link to="https://chile.generation.org/">
+                        <img src="src/assets/Generation.png" alt="" />
                     </Link>
                 </div>
                 
@@ -28,9 +28,16 @@ const Colaboradores = ()=>{
 
                 <div id='img-colabo-2'>
                     <Link to="https://portales.bancochile.cl/cuentasconelchile/educacion-financiera-digital">
-                    <img src="src\assets\banco-de-chile.webp " alt="" />
+                    <img src="src/assets/Bancochile.png" alt="" />
                     </Link>
                 </div>
+                <p>
+                El Banco de Chile se funda el 28 de octubre de 1893 con un capital inicial de $20.000.000 y tras la fusión de los entonces Banco Nacional de Chile, Banco Agrícola y Banco de Valparaíso.
+
+Formalmente inicia sus operaciones dos meses después el -2 de enero de 1894- con dos oficinas principales (Santiago y Valparaíso) y una red de 23 sucursales a lo largo del país y 10 agencias en el extranjero para sus operaciones internacionales. 
+                        
+                    </p>
+                
             </div>
             </section>
             </div>
