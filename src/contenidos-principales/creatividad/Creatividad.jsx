@@ -57,6 +57,7 @@ const Creatividad = () => {
               Recuerda usar nuestro foro si tienes alguna duda o quieres saber más a fondo!
             </aside>
           </div>
+          
         </div>
       );
     };

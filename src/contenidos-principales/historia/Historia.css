@@ -1,0 +1,17 @@
+.title-historia h1 {
+    text-align: center;
+    padding-top: 100px;
+    color: #ffff;
+    font-size: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  .title-historia p {
+    text-align: justify;
+    padding-top: 100px;
+    color: #ffff;
+    font-size: 40px;
+    margin-bottom: 60px;
+    margin-top: 20px;
+  }

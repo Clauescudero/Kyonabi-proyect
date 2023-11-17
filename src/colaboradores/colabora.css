@@ -3,13 +3,15 @@
 
 .container{
     display: flex;
-    text-align: center;
+    text-align: justify;
+    color: #ffff;
+    font-size: 22px;
 }
 
 .Colaboradores img{
     border-radius: 9px;
-    width: 600px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     margin: 6px;
 }
 
@@ -26,5 +28,9 @@
 .Colaboradores h1 {
     text-align: center;
     padding-top: 100px;
+    color: #ffff;
+    font-size: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
     
 } 
