@@ -15,7 +15,7 @@ const Card = ({ title, content, imageUrl }) => {
 };
 
 // Componente principal que utiliza la tarjeta (App)
-const App = () => {
+const Equipo = () => {
                   
   return (
     <div id="tituloPrincipal-container"  className="apptituloPricipal">   
@@ -56,5 +56,5 @@ const App = () => {
   );
 };
 
-export default App;
+export default Equipo;
 

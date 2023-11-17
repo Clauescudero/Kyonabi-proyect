@@ -1,0 +1,49 @@
+.container-herra{
+    margin-top: 10%;
+}
+.container-herra h1 {
+    color: #333;
+}
+
+.container-herra ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container-h-info li{
+    padding: 10%;
+}
+
+.container-herra  li {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 2%;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.container-herra  h2 {
+    color: #6a00a7;
+}
+
+.container-herra  p {
+    color: #555;
+}
+
+.container-herra img {
+    margin: 10px 0;
+}
+
+.container-herra a {
+    display: inline-block;
+    padding: 10px;
+    background-color: #6a00a7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.container-herra  a:hover {
+    background-color: #4b0072;
+}

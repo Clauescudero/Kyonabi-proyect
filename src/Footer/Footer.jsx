@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-md-8">
             <div id="columnas" className="columnas-miApp">
-              <ul>
+              <ul style={{fontWeight: 'bold', fontSize:'large'}}>
                 <li><Link to="/noticias">Noticias</Link></li>
                 <li><Link to="/equipo">Nuestro Equipo</Link></li>
                 <li><Link to="/Tutores">Nuestros Tutores</Link></li>

@@ -18,6 +18,7 @@ import Docentes from "./docentes/docentes";
 import FormularioDocentes from "./FormularioDocentes/FormularioDocentes.jsx";
 import FormularioEstudiantes from "./FormularioEstudiante/FormularioEstudiante.jsx";
 import NuestrosTutores from "./NuestrosTutores/NuestrosTutores.jsx";
+import Herramientas from "./Herramientas/Herramientas.jsx";
 import Colaboradores from "./colaboradores/colabora.jsx";
 import Ciencias from "./contenidos-principales/ciencia/ciencias.jsx";
 import Economia from "./contenidos-principales/economia/economia.jsx";
@@ -26,6 +27,7 @@ import Idiomas from "./contenidos-principales/idiomas/idiomas.jsx";
 import Matematica from "./contenidos-principales/matematicas/matematicas.jsx";
 import Skills from "./contenidos-principales/skills/skills.jsx";
 import Tecnologia from "./contenidos-principales/tecnologia/tecnologia.jsx";
+import Equipo from './Equipo/Equipo';
 function App () {
   const audioSource = 'src/Music';
   return (
@@ -47,6 +49,7 @@ function App () {
         <Route path="/FormularioEstudiante" element={<FormularioEstudiantes />}/>
         <Route path="/Login" element={<Login />} />
         <Route path="/Tutores" element={<NuestrosTutores/>}></Route>
+        <Route path="/herramientas" element={<Herramientas/>}></Route>
         <Route path="/Colaboradores" element={<Colaboradores/>}></Route>
         <Route path="/Ciencia" element={<Ciencias/>}></Route>
         <Route path="/Economia" element={<Economia/>}></Route>
@@ -55,6 +58,7 @@ function App () {
         <Route path="/Matematicas" element={<Matematica/>}></Route>
         <Route path="/Skills" element={<Skills/>}></Route>
         <Route path="/Tecnologia" element={<Tecnologia/>}></Route>
+        <Route path="/equipo" element={<Equipo/>}></Route>
       </Routes>
       <MusicPlayer src= {audioSource}></MusicPlayer> 
       <Footer />
