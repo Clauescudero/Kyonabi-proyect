@@ -1,37 +1,34 @@
 .container-herra{
     margin-top: 10%;
+    width: 100%;
 }
 .container-herra h1 {
-    color: #333;
+    color: #ffffff;
+    font-weight: bolder;
+    margin-left: 5%;
 }
 
-.container-herra ul {
-    list-style: none;
-    padding: 0;
-}
-
-.container-h-info li{
-    padding: 10%;
-}
-
-.container-herra  li {
-    border: 1px solid #ccc;
+.herram-card {
+    border: 1px solid #000000;
     margin: 10px;
     padding: 2%;
     border-radius: 5px;
-    background-color: #ffffff;
-}
-
-.container-herra  h2 {
-    color: #6a00a7;
+    background-color: rgba(236, 236, 236, 0.422);
 }
 
 .container-herra  p {
-    color: #555;
+    color: #000000;
+    font-size: large;
+    font-weight: bolder;
 }
 
-.container-herra img {
-    margin: 10px 0;
+.herram-logo img{
+    margin-left: 0%;
+    border: #000000;
+    max-width: 20%;
+    max-height: 3rem;
+    margin-left: 0%;
+    border-radius: 10%;
 }
 
 .container-herra a {
