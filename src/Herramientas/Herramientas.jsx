@@ -28,6 +28,12 @@ const Herramientas = () => {
             logo: 'https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/04a23c30-ec95-4ab3-9cbe-718b2b9cbfe1.png?ixlib=react-9.0.3&ch=Width%2CDPR&auto=format&w=2618',
             link: 'https://kahoot.it/',
         },
+        {
+            name: 'Kahoot',
+            description: 'Plataforma gratuita que permite la creación de cuestionarios de evaluación. Crea concursos en el aula para  reforzar el aprendizaje.',
+            logo: 'https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/04a23c30-ec95-4ab3-9cbe-718b2b9cbfe1.png?ixlib=react-9.0.3&ch=Width%2CDPR&auto=format&w=2618',
+            link: 'https://kahoot.it/',
+        },
     ];
 
     return (
