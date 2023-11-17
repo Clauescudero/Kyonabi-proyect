@@ -15,7 +15,7 @@ const Card = ({ title, content, imageUrl }) => {
 };
 
 // Componente principal que utiliza la tarjeta (App)
-const App = () => {
+const Equipo = () => {
                   
   return (
     <div id="tituloPrincipal-container"  className="apptituloPricipal">   
@@ -28,27 +28,27 @@ const App = () => {
       <Card
         title="Nicole Rodríguez  Scrum Master"
         content="Lider de Equipo Scrum Kyonabi, encargada de organizar y mantener el enfoque del proyecto. "
-        imageUrl="src/Imagenes Equipo/2.png"
+        imageUrl="src/assets/Nicole.png"
       />
       <Card
         title="Claudio Escudero  Product Owner"
         content="Responsable de realizar los nexos entre Kyonabi y las partes interesadas en el proyecto."
-        imageUrl="src/Imagenes Equipo/3.png"
+        imageUrl="src/assets/Claudio.png"
       />
       <Card
         title="Fernando Lizana  Desarrollador"
         content="Desarrollador Full Stack con enofque en..."
-        imageUrl="src/Imagenes Equipo/4.png"
+        imageUrl="src/assets/Fernando.png"
       />
       <Card
         title="Rolgens Gerve  Desarrollador "
         content="Desarrollador Full Stack con enofque en..."
-        imageUrl="src/Imagenes Equipo/5.png"
+        imageUrl="src/assets/Olguin.png"
       />
       <Card
         title="Mixy Becerra  Desarrolladora"
         content="Desarrollador Full Stack con enofque en Diseño y Gráficas"
-        imageUrl="src/Imagenes Equipo/6.png"
+        imageUrl="src/assets/Mixy.png"
       />
       
     </div>
@@ -56,5 +56,5 @@ const App = () => {
   );
 };
 
-export default App;
+export default Equipo;
 

@@ -4,7 +4,7 @@ const Matematica = () => {
           <div className='title-creatividad'>
             <h1>Matematicas</h1>
               <p>
-                  El pensamiento creativo está muy valorado en nuestras sociedades, en las que la innovación y el cambio juegan un rol importante. En él intervienen la memoria, la inteligencia, la imaginación y otros procesos mentales complejos que conducen al pensamiento original.
+              Las matemáticas son una ciencia formal, que estudia la relación entre entes o elementos abstractos, como son los números, los signos y las figuras.
               </p>
           </div>
           <div className="main-content">

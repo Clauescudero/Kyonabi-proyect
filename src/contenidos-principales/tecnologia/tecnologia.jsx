@@ -4,7 +4,7 @@ const Tecnologia = () => {
           <div className='title-creatividad'>
             <h1>Tecnologias</h1>
               <p>
-                  El pensamiento creativo está muy valorado en nuestras sociedades, en las que la innovación y el cambio juegan un rol importante. En él intervienen la memoria, la inteligencia, la imaginación y otros procesos mentales complejos que conducen al pensamiento original.
+              La tecnología es el conjunto de nociones y conocimientos científicos que el ser humano utiliza para lograr un objetivo preciso, que puede ser la solución de un problema especifico del individuo o la satisfacción de alguna de sus necesidades.
               </p>
           </div>
           <div className="main-content">
