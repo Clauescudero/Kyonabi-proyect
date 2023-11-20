@@ -1,0 +1,36 @@
+
+
+
+.container{
+    display: flex;
+    text-align: justify;
+    color: #ffff;
+    font-size: 22px;
+}
+
+.Colaboradores img{
+    border-radius: 9px;
+    width: 500px;
+    height: 500px;
+    margin: 6px;
+}
+
+#img-colabo-2:hover img{
+    box-shadow: 10px 5px 5px black;
+
+}
+#img-colabo-1:hover img{
+    box-shadow: 10px 5px 5px black;
+
+
+}
+
+.Colaboradores h1 {
+    text-align: center;
+    padding-top: 100px;
+    color: #ffff;
+    font-size: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+} 

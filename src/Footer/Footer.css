@@ -2,13 +2,21 @@
 #miFooter .columnas-miApp {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
+  color: black;
+  margin-top: 30px;
+  
 }
 
 ul {
   list-style: none;
   padding: 20px;
   margin: 20px;
+}
+
+ul a{
+  text-decoration: none;
+  color: black;
 }
 
 li {

@@ -17,7 +17,7 @@ const Home = () => {
       <div className="card mb-3">
         <div className="row g-0">
           <div className="col-md-4">
-            <img src="../assets/card1.png" className="img-fluid rounded-start" alt="Card 1" />
+            <img src="https://media.discordapp.net/attachments/1143374824299827302/1171586337757999104/card1.png?ex=6566724d&is=6553fd4d&hm=e4655dcbafbb0dde09068dc45c4ec131f3bb19dfb5582964d21edc5bb9958855&=&width=380&height=676" className="img-fluid rounded-start" alt="Card 1" />
           </div>
           <div className="col-md-8">
             <div className="card-body">
@@ -33,7 +33,7 @@ const Home = () => {
       <div className="card mb-4">
         <div className="row g-0">
           <div className="col-md-4">
-            <img src="../assets/Card2.png" className="img-fluid rounded-start" alt="Card 2" />
+            <img src="https://media.discordapp.net/attachments/1143374824299827302/1171586350055706655/Card2.png?ex=65667250&is=6553fd50&hm=0ef483b147514eb94dbdcc619deb786b065173b5f23bfda3d593658a24e1a153&=&width=380&height=676" className="img-fluid rounded-start" alt="Card 2" />
           </div>
           <div className="col-md-8">
             <div className="card-body">

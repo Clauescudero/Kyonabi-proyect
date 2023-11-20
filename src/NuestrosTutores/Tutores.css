@@ -1,0 +1,35 @@
+
+.tutor-card {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin: 10px;
+  width: 600px; /* Ancho de la tarjeta */
+  background: white;
+  border-radius: 10px;
+}
+
+.tutor-photo {
+  margin-right: 15px;
+}
+
+.tutor-photo img {
+  border-radius: 50%; 
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.tutor-info {
+  text-align: left;
+  font-size: 23px;
+  margin-left: 20px;
+}
+
+.nuestros-tutores {
+  margin-top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start; 
+}

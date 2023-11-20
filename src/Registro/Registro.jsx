@@ -1,9 +1,10 @@
 import React from 'react';
 import './Registro.css';
+// import { Link } from 'react-router-dom';
 
 const Registro = () => {
   return (
-    <div className="container">
+    <div className="container-regis">
       <div className="content-container">
         <div className="text-and-images-container">
           <div className="left-container">
@@ -15,11 +16,17 @@ const Registro = () => {
             <p>¿Cómo desea registrarse?</p>
 
             <div className="buttons-container">
-              <button className="btn btn-primary me-2">Estudiante</button>
-              <button className="btn btn-primary">Docente</button>
+              <button className="btn btn-primary me-2" style={{
+                backgroundColor: 'aliceblue', color: 'black', fontSize: 'large',
+                fontWeight: 'bold',
+              }}><a  href="/FormularioEstudiante">Estudiante</a></button>
+              <button className="btn btn-primary" style={{
+                backgroundColor: 'aliceblue', color: 'black', fontSize: 'large',
+                fontWeight: 'bold'
+              }}><a href="/Formulariodocente">Docente</a></button>
             </div>
-          </div>
 
+          </div>
           <div className="right-container">
             <img src="https://cdn-icons-png.flaticon.com/512/65/65882.png" alt="Imagen Derecha" className="right-image" />
           </div>
