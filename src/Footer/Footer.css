@@ -1,11 +1,15 @@
 /* Ajustes generales */
+#miFooter{
+  margin-bottom: 0%;
+
+}
+
 #miFooter .columnas-miApp {
   display: flex;
   justify-content: space-between;
   align-items: end;
   color: black;
   margin-top: 30px;
-  
 }
 
 ul {
@@ -20,12 +24,12 @@ ul a{
 }
 
 li {
-  display: inline;
+  display: inline-block;
   margin-right: 15px;
 }
 
 /* Imagen de redes sociales */
-.img-redes {
+.img-redes{
   max-width: 100%;
   height: auto;
   margin-top: 10px;

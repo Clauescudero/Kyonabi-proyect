@@ -39,7 +39,7 @@ const NavBar = () => {
           >
             <div style={{ backgroundColor:'#6a00a7' }}  className="offcanvas-header">
               <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                Menu
+                Menú
               </h5>
               <button
                 type="button"
@@ -75,21 +75,30 @@ const NavBar = () => {
                     Estudiantes
                   </a>
                   <ul style={{ backgroundColor:'#6a00a7' }} className="dropdown-menu dropdown-menu-dark">
+                  <li>
+                      <Link to="/Perfil">
+                        <a className="dropdown-item" >
+                          Perfil
+                        </a>
+                      </Link>
+                    </li>
                     <li>
                       <Link to="/contenidos">
-                        <a className="dropdown-item" href="#">
+                        <a className="dropdown-item" >
                           Temas
                         </a>
                       </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="/herramientas">
+                      <Link to="/herramientas">
+                      <a className="dropdown-item">
                         Herramientas
                       </a>
+                      </Link>
                     </li>
                     <li>
                       <Link to="/Calendar">
-                          <a className="dropdown-item" href="#">
+                          <a className="dropdown-item" >
                             Seguimiento emocional
                           </a>
                       </Link>
@@ -116,7 +125,7 @@ const NavBar = () => {
                       </a>
                     </li>
                     <li>
-                      <Link to="/sugerencia">
+                      <Link to="/Formulariodocente">
                       <a className="dropdown-item" href="#">
                         ¡Quiero ser voluntario!
                       </a>

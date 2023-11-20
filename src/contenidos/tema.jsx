@@ -3,15 +3,16 @@ import './temas.css'
 
 
 
-export default function Temas  ({temas,imagenes}){
+export default function Temas({ temas, imagenes }) {
 
-    return(
+    return (
         <>
-    <div  className="relacionadas">
-     <h4>{temas}</h4> 
-     <div className="secion">
-     <img src={imagenes}  />
-     </div>
-    </div>
+            <div className="relacionadas">
+                <h4>{temas}</h4>
+                <div className="secion">
+                    <img src={imagenes} />
+                </div>
+            </div>
         </>
-        )}
+    )
+}
