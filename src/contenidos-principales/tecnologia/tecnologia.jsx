@@ -2,7 +2,7 @@ const Tecnologia = () => {
     return (
         <div id="Tecnologias-container" className="contenidos-materiales">
           <div className='title-creatividad'>
-            <h1>Tecnologias</h1>
+            <h1>Tecnologías</h1>
               <p>
               La tecnología es el conjunto de nociones y conocimientos científicos que el ser humano utiliza para lograr un objetivo preciso, que puede ser la solución de un problema especifico del individuo o la satisfacción de alguna de sus necesidades.
               </p>
@@ -49,9 +49,6 @@ const Tecnologia = () => {
                 </div>
               </div>
             </div>
-            <aside className='sidebar'>
-              Recuerda usar nuestro foro si tienes alguna duda o quieres saber más a fondo!
-            </aside>
           </div>
         </div>
       );

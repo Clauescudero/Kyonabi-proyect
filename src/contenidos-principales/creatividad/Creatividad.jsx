@@ -5,7 +5,7 @@ const Creatividad = () => {
     return (
         <div id="creatividad-container" className="contenidos-materiales">
           <div className='title-creatividad'>
-            <h1>Creatividad y Pensamiento Creativo</h1>
+            <h1>Creatividad</h1>
               <p>
                   El pensamiento creativo está muy valorado en nuestras sociedades, en las que la innovación y el cambio juegan un rol importante.
                   <br/> En él intervienen la memoria, la inteligencia, la imaginación y otros procesos mentales complejos que conducen al pensamiento original.
@@ -53,9 +53,6 @@ const Creatividad = () => {
                 </div>
               </div>
             </div>
-            <aside className='sidebar'>
-              Recuerda usar nuestro foro si tienes alguna duda o quieres saber más a fondo!
-            </aside>
           </div>
           
         </div>

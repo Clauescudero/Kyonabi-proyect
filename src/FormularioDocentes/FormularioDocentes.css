@@ -2,17 +2,14 @@
     display: flex;
     flex-direction: column;
     margin-top: 100px;
-    background: linear-gradient(#8fe3f1, #bb18fd);
+    background: linear-gradient( #70f0e597,rgba(167, 246, 255, 0.854), rgba(255, 255, 255, 0.187));
     background-size: cover;
     margin-bottom: 10%;
     margin-left: 5%;   
 
   }
   
-  .formulario-registro {
-    /* width: 35.25rem; */
-    /* height: 46.313rem; */
-    background-color: rgba(217, 217, 217, 0.15);
+  .formulario-registro-docente {
     border-radius: 3rem;
     margin-bottom: 4rem; 
     

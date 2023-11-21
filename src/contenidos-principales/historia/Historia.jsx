@@ -50,9 +50,6 @@ const Historia = () => {
                 </div>
               </div>
             </div>
-            <aside className='sidebar'>
-              Recuerda usar nuestro foro si tienes alguna duda o quieres saber más a fondo!
-            </aside>
           </div>
         </div>
       );

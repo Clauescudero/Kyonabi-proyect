@@ -39,7 +39,7 @@
     font-size: large;
     font-weight: bold;
     white-space: nowrap; 
-    max-width: 25%;
+    max-width: 40%;
     display:flex;
 }
 
@@ -48,6 +48,10 @@
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
 } 
+
+.boton-perfil button :hover{
+    background-color: rgb(226, 236, 243);
+}
 
 .calendar-container .legend {
     margin-top: 4rem;

@@ -2,7 +2,7 @@ const Matematica = () => {
     return (
         <div id="Matematica-container" className="contenidos-materiales">
           <div className='title-creatividad'>
-            <h1>Matematicas</h1>
+            <h1>Matemáticas</h1>
               <p>
               Las matemáticas son una ciencia formal, que estudia la relación entre entes o elementos abstractos, como son los números, los signos y las figuras.
               </p>
@@ -49,9 +49,6 @@ const Matematica = () => {
                 </div>
               </div>
             </div>
-            <aside className='sidebar'>
-              Recuerda usar nuestro foro si tienes alguna duda o quieres saber más a fondo!
-            </aside>
           </div>
         </div>
       );
