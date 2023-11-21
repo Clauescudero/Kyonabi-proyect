@@ -27,12 +27,12 @@ const Equipo = () => {
       <div id="tituloPrincipal-card"  className="appcard">  
       <Card
         title="Nicole Rodríguez  Scrum Master"
-        content="Lider de Equipo Scrum Kyonabi, encargada de organizar y mantener el enfoque del proyecto. "
+        content="Lider de Equipo Scrum Kyonabi, encargada de organizar y mantener el enfoque del proyecto. Desarrolladora Full Stack "
         imageUrl="src/assets/Nicole.png"
       />
       <Card
         title="Claudio Escudero  Product Owner"
-        content="Responsable de realizar los nexos entre Kyonabi y las partes interesadas en el proyecto."
+        content="Responsable de realizar los nexos entre Kyonabi y las partes interesadas en el proyecto. Desarrollador Full Stack"
         imageUrl="src/assets/Claudio.png"
       />
       <Card
@@ -47,7 +47,7 @@ const Equipo = () => {
       />
       <Card
         title="Mixy Becerra  Desarrolladora"
-        content="Desarrollador Full Stack con enofque en Diseño y Gráficas"
+        content="Desarrolladora Full Stack con enofque en Diseño y Gráfico"
         imageUrl="src/assets/Mixy.png"
       />
       

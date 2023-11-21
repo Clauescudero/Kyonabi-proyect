@@ -20,9 +20,8 @@ const FormularioDocentes = () => {
                         <input type="password" id="Confirmarpassword" name="password" />
                         <label htmlFor="aboutMe">Sobre Mí</label>
                         <textarea>
-                    
+                        
                         </textarea>
-            
                     </div>
                     <div className="btn-container-registro">
                         <button className="btn-registro">Crear cuenta</button>

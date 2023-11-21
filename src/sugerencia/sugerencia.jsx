@@ -9,7 +9,7 @@ const Suger = () => {
           <h1>Sugerencias</h1>
           <div>
             <p>
-              ¡Tu opinión es importante para nosotros! Por eso, hemos dispuesto este canal para recibir tus sugerencias, reclamos y comentarios en el siguiente formulario.
+              ¡Eres importante para nosotros! Por eso, hemos dispuesto este canal para recibir tus sugerencias, reclamos y comentarios en el siguiente formulario.
               <br />
               Completa y entréganos el máximo de antecedentes, esto nos permitirá canalizarlos de mejor forma.
             </p>

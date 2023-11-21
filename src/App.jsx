@@ -28,6 +28,8 @@ import Matematica from "./contenidos-principales/matematicas/matematicas.jsx";
 import Skills from "./contenidos-principales/skills/skills.jsx";
 import Tecnologia from "./contenidos-principales/tecnologia/tecnologia.jsx";
 import Equipo from './Equipo/Equipo';
+import ProfileUser from './Perfil/ProfileUser.jsx'
+
 function App () {
   const audioSource = 'src/Music';
   return (
@@ -59,6 +61,7 @@ function App () {
         <Route path="/Skills" element={<Skills/>}></Route>
         <Route path="/Tecnologia" element={<Tecnologia/>}></Route>
         <Route path="/equipo" element={<Equipo/>}></Route>
+        <Route path="/Perfil" element={<ProfileUser/>}></Route>
       </Routes>
       <MusicPlayer src= {audioSource}></MusicPlayer> 
       <Footer />

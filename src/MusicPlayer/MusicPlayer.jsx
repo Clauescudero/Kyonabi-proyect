@@ -22,7 +22,7 @@ const Title = styled.h2`
 
 const MusicPlayer = ({ src }) => {
   return (
-    <PlayerContainer style={{width:'50%', marginTop:'0px'}} className="PlayerContainer"> 
+    <PlayerContainer style={{width:'30%', marginTop:'0px'}} className="PlayerContainer"> 
       <Title>Estudiemos con Música</Title>
       
       <ReactAudioPlayer

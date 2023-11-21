@@ -1,5 +1,6 @@
 import React from 'react';
 import './Registro.css';
+import { Link } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 
 const Registro = () => {
@@ -16,14 +17,18 @@ const Registro = () => {
             <p>¿Cómo desea registrarse?</p>
 
             <div className="buttons-container">
+              <Link to="/FormularioEstudiante">
               <button className="btn btn-primary me-2" style={{
                 backgroundColor: 'aliceblue', color: 'black', fontSize: 'large',
                 fontWeight: 'bold',
-              }}><a  href="/FormularioEstudiante">Estudiante</a></button>
+              }}>Estudiante</button>
+              </Link>
+              <Link to="/Formulariodocente">
               <button className="btn btn-primary" style={{
                 backgroundColor: 'aliceblue', color: 'black', fontSize: 'large',
                 fontWeight: 'bold'
-              }}><a href="/Formulariodocente">Docente</a></button>
+              }}>Docente</button>
+              </Link>
             </div>
 
           </div>
