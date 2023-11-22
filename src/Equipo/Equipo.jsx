@@ -21,7 +21,7 @@ const Equipo = () => {
     <div id="tituloPrincipal-container"  className="apptituloPricipal">   
     <div className="tituloPrincipal">
         <h1>Conoce a Nuestro Equipo</h1>
-        <p>El equipo técnico de Kyonabi, se encarga de mantener la pagina activa y actualizada para siempre entregar el mejor sevicio a nuestros usuarios</p>
+        <p>El equipo técnico de Kyonabi, se encarga de mantener la pagina activa y actualizada para siempre entregar el mejor sevicio a nuestros usuarios.</p>
       </div>   
       
       <div id="tituloPrincipal-card"  className="appcard">  
