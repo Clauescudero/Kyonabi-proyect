@@ -13,7 +13,7 @@ const Herramientas = () => {
         {
             name: 'Jira',
             description: 'Software de seguimiento de problemas y gestión de proyectos ágil.',
-            logo: 'https://logos-world.net/wp-content/uploads/2021/02/Jira-Emblem.png',
+            logo: 'https://res.cloudinary.com/status-hero/image/upload/f_auto,q_auto,w_512/v2709/assets/entities/logos/icon/jira.png',
             link: 'https://www.atlassian.com/software/jira',
         },
         {
@@ -29,16 +29,22 @@ const Herramientas = () => {
             link: 'https://kahoot.it/',
         },
         {
-            name: 'Kahoot',
-            description: 'Plataforma gratuita que permite la creación de cuestionarios de evaluación. Crea concursos en el aula para  reforzar el aprendizaje.',
-            logo: 'https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/04a23c30-ec95-4ab3-9cbe-718b2b9cbfe1.png?ixlib=react-9.0.3&ch=Width%2CDPR&auto=format&w=2618',
-            link: 'https://kahoot.it/',
+            name: 'Miro',
+            description: 'Un entorno donde los equipos pueden gestionar proyectos, diseñar productos y definir el futuro en colaboración.',
+            logo: 'https://learning.vicinnovate.ac.nz/uploads/1/0/0/0/10008598/published/miro-logo-rounded.png?1644873566',
+            link: 'https://miro.com/es',
+        },
+        {
+            name: 'Miro',
+            description: 'Un entorno donde los equipos pueden gestionar proyectos, diseñar productos y definir el futuro en colaboración.',
+            logo: 'https://learning.vicinnovate.ac.nz/uploads/1/0/0/0/10008598/published/miro-logo-rounded.png?1644873566',
+            link: 'https://miro.com/es',
         },
     ];
 
     return (
         <div className='container-herra'>
-            <h1>¡Herramientas son útiles que debes conocer!</h1>
+            <h1>¡Herramientas útiles que debes conocer!</h1>
             <div className='container-info'>
                 <ul>
                     <div className='Card-herramienta'>

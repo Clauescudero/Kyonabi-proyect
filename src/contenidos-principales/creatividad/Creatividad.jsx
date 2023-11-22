@@ -1,65 +1,73 @@
 import React from 'react';
 import './Creatividad.css';
 
-const Creatividad = () => {
-    return (
-        <div id="creatividad-container" className="contenidos-materiales">
-          <div className='title-creatividad'>
-            <h1>Creatividad y Pensamiento Creativo</h1>
-              <p>
-                  El pensamiento creativo está muy valorado en nuestras sociedades, en las que la innovación y el cambio juegan un rol importante.
-                  <br/> En él intervienen la memoria, la inteligencia, la imaginación y otros procesos mentales complejos que conducen al pensamiento original.
-              </p>
-          </div>
-          <div className="main-content">
-            <div className="cards-container">
-              <div className="card">
-                <div className="card-content">
-                  <img
-                    className="avatar"
-                    src="https://i.imgur.com/OKS67lhm.jpg"
-                    alt="Aklilu Lemma"
-                  />
-                  <div className="card-text">
-                    <h1>video 1</h1>
-                    <p>Texto descriptivo del video, imagen o enlace</p>
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-content">
-                  <img
-                    className="avatar"
-                    src="https://i.imgur.com/OKS67lhm.jpg"
-                    alt="Aklilu Lemma"
-                  />
-                  <div className="card-text">
-                    <h1>video 2</h1>
-                    <p>Texto descriptivo del video, imagen o enlace</p>
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-content">
-                  <img
-                    className="avatar"
-                    src="https://i.imgur.com/OKS67lhm.jpg"
-                    alt="Aklilu Lemma"
-                  />
-                  <div className="card-text">
-                    <h1>video 3</h1>
-                    <p>Texto descriptivo del video, imagen o enlace</p>
-                  </div>
-                </div>
+const Historia = () => {
+  return (
+    <div id="Creatividad-container" className="contenidos-materiales">
+      {/* ... */}
+      <div className='title-Creatividad'>
+        <h1>Creatividad</h1>
+        <p>
+        La creatividad es la capacidad de crear​ nuevas ideas o conceptos, de nuevas asociaciones entre ideas y conceptos conocidos, que habitualmente producen soluciones originales. La creatividad es sinónimo del "pensamiento original", la "imaginación constructiva", el "pensamiento divergente" o el "pensamiento creativo"
+        </p>
+      </div>
+      <div className="main-content-Creatividad">
+        <div className="cards-container-Creatividad">
+          {/* Tarjeta 1 */}
+          <div className="card-Creatividad">
+            <div className="card-content-Creatividad">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/hGl7ShlXMd0"
+                title="video 1"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+              <div className="card-textCreatividad">
+                <h1>Cortometraje, Gana siempre la creatividad</h1>
+                <p>Tú tambien puedes encontrar la creatividad que llevas dentro.</p>
               </div>
             </div>
-            <aside className='sidebar'>
-              Recuerda usar nuestro foro si tienes alguna duda o quieres saber más a fondo!
-            </aside>
           </div>
-          
+          {/* Tarjeta 2 */}
+          <div className="card-Creatividad">
+            <div className="card-content-Creatividad">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/jxuTvmOHg54"
+                title="Título del Video 2"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+              <div className="card-textCreatividad">
+                <h1>Cómo Acceder a tu CREATIVIDAD</h1>
+                <p>En este video aprenderás tres hábitos que te ayudarán a producir trabajos increíbles y originales de los que te sientas orgulloso.</p>
+              </div>
+            </div>
+          </div>
+          {/* Tarjeta 3 */}
+          <div className="card-Creatividad">
+            <div className="card-content-Creatividad">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/Magubkj8yfU"
+                title="Título del Video 3"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+              <div className="card-textCreatividad">
+                <h1>Mapas conceptuales│Tarjetas Pop-Up</h1>
+                <p>Crea tus mapas conceptuales de una forma nueva y creativa.</p>
+              </div>
+            </div>
+          </div>
         </div>
-      );
-    };
+      </div>
+    </div>
+  );
+};
 
-export default Creatividad;
+export default Historia;
