@@ -1,69 +1,57 @@
-.containers-registro {
-    display: flex;
-    flex-direction: column;
-    margin-top: 40%;
-    background-size: cover;
-    margin-bottom: 10%;
-    margin-left: 5%;   
-    max-height: 100%;
-    width: 100%;
-    align-content: center;
-    margin-left: 25%;
-  }
-  
-  .formulario-registro-docente {
-    border-radius: 3rem;
-    margin-bottom: 4rem; 
-    
-  }
-  
-  .formulario-registro h1 {
-    text-align: center;
-    padding: 0 0 1.5rem 0;
-    margin-top: 2.5rem;
-    color: white;
-    font-size: var(--font-lg);
-  }
-  
-  .formulario-registro label {
-    color: white;
-    font-size: var(--font-md);
-    margin: 0.625rem 0.625rem 0.625rem 0.625rem;
-  }
-  
-  .usuario-registro input {
-    padding: 10px;
-    background-color: var(--clr-blue, rgb(147, 201, 255));
-    border: 1px solid white;
-    font-size: 15px;
-    color: #f4f6f9;
-    border-radius: 25px;
-  }
-  
-  form .usuario-registro {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .formulario-registro form {
-    padding: 0 5rem;
-    box-sizing: border-boxs;
-  }
-  
-  .btn-registro {
-    font-weight: 600;
-    font-size: var(--font-md);
-    color: rgb(12, 0, 0);
-    padding: 0.5em 1.5em;
-    border: none;
-    border-radius: 3rem;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    margin-top: 2.5rem;
-    width: 15.625rem;
-  }
-  
-  .btn-container-registro {
-    display: flex;
-    justify-content: center;
-  }
+.containers-registro-docente {
+  width: 50%;
+  margin: auto;
+}
+
+.formulario-registro-docente {
+  background:linear-gradient(#8fe3f1, #bb18fd);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.usuario-registro-docente {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-container-registro-docente {
+  text-align: center;
+}
+
+.btn-registro-docente {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-registro-docente:hover {
+  background-color: #45a049;
+}
