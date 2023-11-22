@@ -10,6 +10,7 @@ import './Login.css'
 // Importa la función useEffect de React, que se utiliza para realizar efectos secundarios en componentes funcionales.
 // jwt-decode = Esta función se utiliza para decodificar tokens JWT (JSON Web Tokens)
 
+
 const UserLogin = () => {
   const navigate = useNavigate();
   const { setUser } = useUser();
@@ -94,8 +95,6 @@ const UserLogin = () => {
       setUserLocal(JSON.parse(localStorage.getItem("user")));
     }
   }, [setUser]);
-  
-
   
 
   // El componente devuelve el formulario JSX con los manejadores de eventos vinculados

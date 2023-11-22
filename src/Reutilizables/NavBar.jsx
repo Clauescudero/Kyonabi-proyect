@@ -100,7 +100,7 @@ const NavBar = () => {
     <nav  style={{ backgroundColor:'rgb(62, 0, 98)', height:'5rem' }} className="navbar navbar-dark  fixed-top">
       <div className="container-fluid">
         <Link to="/">
-        <a style={{ textDecoration:'none' }}  className="navbar-brand" href="/">Kyonabi</a>
+        <a style={{ textDecoration:'none', fontWeight:'bolder' }}  className="navbar-brand" href="/">Kyōnabi</a>
         </Link>
         <div className="d-flex align-items-center">
         {localStorage.getItem("user") !== null && (
@@ -151,7 +151,7 @@ const NavBar = () => {
               <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">
                 Menú
               </h5>
-              <button
+              <button 
                 type="button"
                 className="btn-close btn-close-white"
                 data-bs-dismiss="offcanvas"
@@ -234,7 +234,7 @@ const NavBar = () => {
                   </a>
                   <ul style={{ backgroundColor:'#6a00a7' }} className="dropdown-menu dropdown-menu-dark">
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="/recursos/creatividad">
                         Recursos
                       </a>
                     </li>
@@ -246,6 +246,7 @@ const NavBar = () => {
                       </Link>
                     </li>
                     <li>
+
                       <Link to="/Formulariodocente">
                       <a className="dropdown-item" href="#">
                         ¡Quiero ser voluntario!
