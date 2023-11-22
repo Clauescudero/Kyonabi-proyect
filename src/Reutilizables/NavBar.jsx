@@ -75,13 +75,6 @@ const NavBar = () => {
                     Estudiantes
                   </a>
                   <ul style={{ backgroundColor:'#6a00a7' }} className="dropdown-menu dropdown-menu-dark">
-                  <li>
-                      <Link to="/Perfil">
-                        <a className="dropdown-item" >
-                          Perfil
-                        </a>
-                      </Link>
-                    </li>
                     <li>
                       <Link to="/contenidos">
                         <a className="dropdown-item" >
@@ -120,7 +113,7 @@ const NavBar = () => {
                   </a>
                   <ul style={{ backgroundColor:'#6a00a7' }} className="dropdown-menu dropdown-menu-dark">
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="/recursos/creatividad">
                         Recursos
                       </a>
                     </li>
