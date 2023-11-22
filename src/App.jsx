@@ -30,6 +30,7 @@ import Tecnologia from "./contenidos-principales/tecnologia/tecnologia.jsx";
 import Equipo from './Equipo/Equipo';
 import ProfileUser from './Perfil/ProfileUser.jsx'
 import Plani from "./planificacion/Planificacion";
+import Noticias from "./Noticias/Noticias.jsx";
 
 function App () {
   const audioSource = 'src/Music';
@@ -64,6 +65,7 @@ function App () {
         <Route path="/equipo" element={<Equipo/>}></Route>
         <Route path="/Perfil" element={<ProfileUser/>}></Route>
         <Route path="/recursos/creatividad" element={<Plani/>}></Route>
+        <Route path="/noticias" element={<Noticias/>}></Route>
       </Routes>
       <MusicPlayer src= {audioSource}></MusicPlayer> 
       <Footer />
