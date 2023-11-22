@@ -37,7 +37,7 @@ const Equipo = () => {
       />
       <Card
         title="Fernando Lizana  Desarrollador"
-        content="Desarrollador Full Stack con enofque en..."
+        content="Desarrollador Full Stack con enofque en geología."
         imageUrl="src/assets/Fernando.png"
       />
       <Card

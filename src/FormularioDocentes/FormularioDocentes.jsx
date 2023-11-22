@@ -4,7 +4,7 @@ import './FormularioDocentes.css'
 const FormularioDocentes = () => {
     return (
         <div className="containers-registro">
-            <div className="formulario-registro">
+            <div className="formulario-registro-docente">
                 <h1>Bienvenido a Kyonabi!</h1>
                 <form action="">
                     <div className="usuario-registro">
