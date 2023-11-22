@@ -1,5 +1,5 @@
 import React from 'react';
-import './matematica.css';
+import './matematicas.css';
 
 const matematica = () => {
   return (
@@ -19,7 +19,7 @@ const matematica = () => {
               <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/videoseries?list=PLiG_ZAUipsjtOJlFypHcqrKywhN_CEOLX"
+                src="https://www.youtube.com/embed/B_9DkUFgLE0&list=PLiG_ZAUipsjtOJlFypHcqrKywhN_CEOLX"
                 title="MATEMÁTICA | Números Racionales"
                 frameBorder="0"
                 allowFullScreen
@@ -36,13 +36,13 @@ const matematica = () => {
               <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/Cdti7efBqVc?si=qZq4ZG5_FU7TI-TQ"
+                src="https://www.youtube.com/embed/Cdti7efBqVc&list=PLiG_ZAUipsjtOJlFypHcqrKywhN_CEOLX&index=4"
                 title="Título del Video 2"
                 frameBorder="0"
                 allowFullScreen
               ></iframe>
               <div className="card-textmatematica">
-                <h1>MATEMÁTICA | Definición de una potencia</h1>
+                <h1>MATEMÁTICA | Definición de una potencia y sus propiedades</h1>
                 <p>Aprende Definición de Potencias y sus propiedades con la clase del profesor Nicolás González</p>
               </div>
             </div>
@@ -53,7 +53,7 @@ const matematica = () => {
               <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/vD0F3x7QR9U?si=zVz257i3w3or7Kp2"
+                src="https://www.youtube.com/embed/vD0F3x7QR9U&list=PLiG_ZAUipsjtOJlFypHcqrKywhN_CEOLX&index=6"
                 title="Título del Video 3"
                 frameBorder="0"
                 allowFullScreen
