@@ -1,8 +1,8 @@
-.container-Noticias{
+.container-Noticia {
     margin-top: 10%;
     width: 100%;
 }
-.container-Noticias h1 {
+.container-Noticia h1 {
     color: #ffffff;
     font-weight: bolder;
     margin-left: 5%;
@@ -16,13 +16,13 @@
     background-color: rgba(255, 253, 253, 0.632);
 }
 
-.container-Noticias  p {
+.container-Noticia p {
     color: #000000;
     font-size: large;
     font-weight: bolder;
 }
 
-.Noticias-logo img{
+.Noticias-logo img {
     margin-left: 0%;
     border: #000000;
     max-width: 20%;
@@ -31,7 +31,7 @@
     border-radius: 10%;
 }
 
-.container-Noticias a {
+.container-Noticia a {
     display: inline-block;
     padding: 10px;
     background-color: #6a00a7;
@@ -41,6 +41,6 @@
     margin-top: 10px;
 }
 
-.container-Noticias  a:hover {
+.container-Noticia a:hover {
     background-color: #4b0072;
 }

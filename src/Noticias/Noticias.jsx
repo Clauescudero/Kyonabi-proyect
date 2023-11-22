@@ -1,55 +1,54 @@
 import React from 'react';
-// import './Noticias.css';
-import TarjetaNoticias from './TarjetaNoticias';
+/* import './Noticias.css'; */
+import TarjetaNoticias from './TarjetaNoticias.jsx'; // Agrega la extensión del archivo si es .js
 
 const Noticias = () => {
     const tools = [
         {
-            name: 'Notion',
-            description: 'Herramienta de colaboración para tomar notas, gestionar proyectos y más.',
-            logo: 'https://logos-download.com/wp-content/uploads/2019/06/Notion_App_Logo.png',
-            link: 'https://www.notion.so/',
+            name: 'Mineduc',
+            description: 'Informate sobre los procesos de educación en Chile.',
+            logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Mineduc.svg/1200px-Mineduc.svg.png',
+            link: 'https://www.mineduc.cl/',
         },
         {
-            name: 'Jira',
-            description: 'Software de seguimiento de problemas y gestión de proyectos ágil.',
-            logo: 'https://res.cloudinary.com/status-hero/image/upload/f_auto,q_auto,w_512/v2709/assets/entities/logos/icon/jira.png',
-            link: 'https://www.atlassian.com/software/jira',
+            name: 'Admisión Escolar',
+            description: 'Admisión Escolar 2024, periódo complementario.',
+            logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Mineduc.svg/1200px-Mineduc.svg.png',
+            link: 'https://www.sistemadeadmisionescolar.cl/',
         },
         {
-            name: 'Figma',
-            description: 'Herramienta de diseño colaborativo en línea.',
-            logo: 'https://images.xiaozhuanlan.com/photo/2020/96d4db790e8c25433e5b0003d9c81c35.png',
-            link: 'https://www.figma.com/',
+            name: 'Beneficios Estudiantiles',
+            description: 'Beneficios estudiantiales Educación Superior.',
+            logo: 'https://portal.beneficiosestudiantiles.cl/sites/default/files/logo_superior.jpg',
+            link: 'https://portal.beneficiosestudiantiles.cl/',
         },
         {
-            name: 'Kahoot',
-            description: 'Plataforma gratuita que permite la creación de cuestionarios de evaluación. Crea concursos en el aula para  reforzar el aprendizaje.',
-            logo: 'https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/04a23c30-ec95-4ab3-9cbe-718b2b9cbfe1.png?ixlib=react-9.0.3&ch=Width%2CDPR&auto=format&w=2618',
-            link: 'https://kahoot.it/',
+            name: 'Becas Santander',
+            description: 'Si eres de los que piensan que nunca hay que dejar de formarse, regístrate y accede a cientos de audiolibros, ebooks, podcasts, videos y cursos.',
+            logo: 'https://www.utem.cl/wp-content/uploads/2019/03/becas-santander-portada.jpg',
+            link: 'https://www.becas-santander.com/',
         },
         {
-            name: 'Miro',
-            description: 'Un entorno donde los equipos pueden gestionar proyectos, diseñar productos y definir el futuro en colaboración.',
-            logo: 'https://learning.vicinnovate.ac.nz/uploads/1/0/0/0/10008598/published/miro-logo-rounded.png?1644873566',
-            link: 'https://miro.com/es',
+            name: 'UDEMY',
+            description: 'Una amplia selección de cursos. Elige entre más de 210.000 cursos de vídeo en línea con nuevo contenido cada mes.',
+            logo: 'https://s.udemycdn.com/meta/default-meta-image-v2.png',
+            link: 'https://www.udemy.com/',
         },
         {
-            name: 'Miro',
-            description: 'Un entorno donde los equipos pueden gestionar proyectos, diseñar productos y definir el futuro en colaboración.',
-            logo: 'https://learning.vicinnovate.ac.nz/uploads/1/0/0/0/10008598/published/miro-logo-rounded.png?1644873566',
-            link: 'https://miro.com/es',
+            name: 'IKIGAI Test',
+            description: 'Ikigai es un concepto japonés que combina 2 palabras: “iki” que significa vida y “gai” que significa “propósito” es similar al concepto francés “Raison d’être” o razón de ser y básicamente se refiere a tener un motivo para levantarte por la mañana y eso se logra al encontrar y vivir tu verdadero propósito',
+            logo: 'https://ikigaitest.com/wp-content/uploads/2022/06/IKIGAI-logo.svg',
+            link: 'https://ikigaitest.com/es/test-de-personalidad/',
         },
     ];
 
     return (
         <div className='container-Noticia'>
-            <h1>¡Herramientas útiles que debes conocer!</h1>
+            <h1>¡Noticias y Enlaces de interés!</h1>
             <div className='container-info-Noticias'>
-                <ul>
-                    <div className='Card-Noticias'>
+                <div className='Card-Noticias'>
                     {tools.map((tool, index) => (
-                        <TarjetaHerramienta
+                        <TarjetaNoticias
                             key={index}
                             name={tool.name}
                             description={tool.description}
@@ -57,12 +56,10 @@ const Noticias = () => {
                             link={tool.link}
                         />
                     ))}
-                    </div>
-                </ul>
+                </div>
             </div>
         </div>
     );
 };
 
 export default Noticias;
-
