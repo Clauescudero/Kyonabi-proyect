@@ -9,7 +9,7 @@ function Calendar() {
                 <div className="col-md-6">
                     <div className="calendar">
                         <div className="boton-perfil">
-                        <button className="btn btn-primary me-2" style={{ backgroundColor: 'aliceblue', color:'black'}}> <a href="/Perfil">Tu Perfil</a></button>
+                            <button className="btn btn-primary me-2" style={{ backgroundColor: 'aliceblue', color: 'black' }}><a href="https://hablemosdetodo.injuv.gob.cl/">¿No estás bien?</a></button>
                         </div>
                         <table>
                             <thead>

@@ -1,60 +1,73 @@
-const Tecnologia = () => {
-    return (
-        <div id="Tecnologias-container" className="contenidos-materiales">
-          <div className='title-creatividad'>
-            <h1>Tecnologias</h1>
-              <p>
-              La tecnología es el conjunto de nociones y conocimientos científicos que el ser humano utiliza para lograr un objetivo preciso, que puede ser la solución de un problema especifico del individuo o la satisfacción de alguna de sus necesidades.
-              </p>
-          </div>
-          <div className="main-content">
-            <div className="cards-container">
-              <div className="card">
-                <div className="card-content">
-                  <img
-                    className="avatar"
-                    src="https://i.imgur.com/OKS67lhm.jpg"
-                    alt="Aklilu Lemma"
-                  />
-                  <div className="card-text">
-                    <h1>video 1</h1>
-                    <p>Texto descriptivo del video, imagen o enlace</p>
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-content">
-                  <img
-                    className="avatar"
-                    src="https://i.imgur.com/OKS67lhm.jpg"
-                    alt="Aklilu Lemma"
-                  />
-                  <div className="card-text">
-                    <h1>video 2</h1>
-                    <p>Texto descriptivo del video, imagen o enlace</p>
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-content">
-                  <img
-                    className="avatar"
-                    src="https://i.imgur.com/OKS67lhm.jpg"
-                    alt="Aklilu Lemma"
-                  />
-                  <div className="card-text">
-                    <h1>video 3</h1>
-                    <p>Texto descriptivo del video, imagen o enlace</p>
-                  </div>
-                </div>
+import React from 'react';
+import './tecnologia.css';
+
+const tecnologia = () => {
+  return (
+    <div id="tecnologia-container" className="contenidos-materiales">
+      {/* ... */}
+      <div className='title-tecnologia'>
+        <h1>Tecnología</h1>
+        <p>
+        La tecnología es la suma de técnicas, habilidades, métodos y procesos utilizados en la producción de bienes o servicios o en el logro de objetivos, como la investigación científica.
+        </p>
+      </div>
+      <div className="main-content-tecnologia">
+        <div className="cards-container-tecnologia">
+          {/* Tarjeta 1 */}
+          <div className="card-tecnologia">
+            <div className="card-content-tecnologia">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/AXY5dDg4ot8"
+                title="video 1"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+              <div className="card-texttecnologia">
+                <h1>La tecnología más destacada del CES 2023</h1>
+                <p>Para aquellos que siguen los últimos desarrollos en innovación, los expertos predicen cuáles serán las claves en tecnología.</p>
               </div>
             </div>
-            <aside className='sidebar'>
-              Recuerda usar nuestro foro si tienes alguna duda o quieres saber más a fondo!
-            </aside>
+          </div>
+          {/* Tarjeta 2 */}
+          <div className="card-tecnologia">
+            <div className="card-content-tecnologia">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/MMAvjs46tnY"
+                title="Título del Video 2"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+              <div className="card-texttecnologia">
+                <h1>¿Podrán los seres humanos amar a los robots con IA?</h1>
+                <p>La inteligencia artificial crea arte, sabe más que muchas personas y trabaja más rápido que ellas. Pero, ¿aceptará la gente robots controlados por IA?</p>
+              </div>
+            </div>
+          </div>
+          {/* Tarjeta 3 */}
+          <div className="card-tecnologia">
+            <div className="card-content-tecnologia">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/NGt5T35OyXw"
+                title="Título del Video 3"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+              <div className="card-texttecnologia">
+                <h1>MAC PRO vs PC GAMER de la NASA ¿cuál será mejor?</h1>
+                <p>Primera vez probando una Apple MAC y es la más cara y poderosa del 2023. se compara con pc Gaming Extrema tope de gama</p>
+              </div>
+            </div>
           </div>
         </div>
-      );
-    };
+      </div>
+    </div>
+  );
+};
 
-export default Tecnologia;
+export default tecnologia;

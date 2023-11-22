@@ -1,19 +1,15 @@
+// En tu componente Tarjetatutores.js
 import React from 'react';
-import './Tutores.css';
 
-
-const Tarjetatutores = ({ nombre, edad, experiencia, fotoURL }) => {
+const Tarjetatutores = ({ name, age, email, rol, subjects, description }) => {
   return (
-    
-    <div className="tutor-card">
-      <div className="tutor-photo">
-        <img src={fotoURL} alt={`Foto de ${nombre}`} />
-      </div>
-      <div className="tutor-info">
-        <h3>{nombre}</h3>
-        <p>Edad: {edad}</p>
-        <p>Experiencia: {experiencia}</p>
-      </div>
+    <div className="tarjeta-tutor">
+      <h3>{name}</h3>
+      <p>Edad: {age}</p>
+      <p>Email: {email}</p>
+      <p>Rol: {rol}</p>
+      <p>Materias: {subjects.join(', ')}</p>
+      <p>Descripción: {description}</p>
     </div>
   );
 };

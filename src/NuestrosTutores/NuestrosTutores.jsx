@@ -1,77 +1,55 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Tarjetatutores from './TarjetaTutores';
 import './Tutores.css';
+import axios from 'axios';
 
 const NuestrosTutores = () => {
-  
-  const tutores = [
-    {
-      nombre: 'Priscila Carrasco',
-      edad: 35,
-      experiencia: 'Ciencia, 10 años',
-      fotoURL: 'src/assets/Tutor-ciencia.png',
-    },
-    {
-        nombre: 'Diana Rodríguez ',
-        edad: 38,
-        experiencia: 'Creatividad, 15 años',
-        fotoURL: 'src/assets/Tutor-creatividad.png',
-      },
-      {
-        nombre: 'Javier Rocha ',
-        edad: 40,
-        experiencia: 'Economía, 20 años',
-        fotoURL: 'src/assets/Tutor-economia.png',
-      },
-      {
-        nombre: 'Ignacia Vergara',
-        edad: 27,
-        experiencia: 'Habilidades blandas, 8 años',
-        fotoURL: 'src/assets/Tutor-habilidades.png',
-      },
-      {
-        nombre: 'Ana Lindao',
-        edad: 30,
-        experiencia: 'Historia, 7 años',
-        fotoURL: 'src/assets/Tutor-historia.png',
-      },
+  const [tutores, setTutores] = useState([]);
+  const [filtroMateria, setFiltroMateria] = useState('');
 
+  const fetchTutores = async () => {
+    try {
+      const response = await axios.get('http://localhost:8080/api/v1/tutores');
+      setTutores(response.data.data);
+    } catch (error) {
+      console.error('Error al obtener tutores:', error);
+    }
+  };
 
-      {
-        nombre: 'Cristina Smith',
-        edad: 25,
-        experiencia: 'Idiomas, 5 años',
-        fotoURL: 'src/assets/Tutor-idiomas.png',
-      },
+  useEffect(() => {
+    fetchTutores();
+  }, []);
 
-      {
-        nombre: 'Jose García',
-        edad: 38,
-        experiencia: 'Matemática, 15 años',
-        fotoURL: 'src/assets/Tutor-matematica.png',
-      },
+  const filtrarPorMateria = (materia) => {
+    setFiltroMateria(materia);
+  };
 
-      {
-        nombre: 'Emilia Bustamante',
-        edad: 28,
-        experiencia: 'Recursos, 6 años',
-        fotoURL: 'src/assets/Tutor-recursos.png',
-      },
-
-      {
-        nombre: 'Linda Brown',
-        edad: 30,
-        experiencia: 'Tecnología, 8 años',
-        fotoURL: 'src/assets/tutor-tecnologia.png',
-      },
-
-
-  ];
+  const tutoresFiltrados = filtroMateria
+    ? tutores.filter((tutor) => tutor.subjects.includes(filtroMateria))
+    : tutores;
 
   return (
-    
     <div className="nuestros-tutores">
-      {tutores.map((tutor, index) => (
+      <div>
+        <label htmlFor="filtroMateria">Filtrar por Materia:</label>
+        <select
+          id="filtroMateria"
+          onChange={(e) => filtrarPorMateria(e.target.value)}
+        >
+          <option value="">Todas</option>
+          <option value="Matemáticas">Matemáticas</option>
+          <option value="Tecnología">Tecnología</option>
+          <option value="Idiomas">Idiomas</option>
+          <option value="Historia">Historia</option>
+          <option value="Recursos">Recursos</option>
+          <option value="Economía">Economía</option>
+          <option value="habilidades">Habilidades</option>
+          <option value="Creatividad">Creatividad</option>
+          <option value="Otras">Otras</option>
+        </select>
+      </div>
+
+      {tutoresFiltrados.map((tutor, index) => (
         <Tarjetatutores key={index} {...tutor} />
       ))}
     </div>

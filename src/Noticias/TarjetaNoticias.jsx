@@ -1,12 +1,12 @@
 import React from 'react';
-import './Herramientas.css';
-const TarjetaHerramienta = ({ name, description, link, logo }) => {
+import './Noticias.css';
+const TarjetaNoticias = ({ name, description, link, logo }) => {
     return (
-        <div className="herram-card">
-            <div className="herram-logo">
+        <div className="Noticias-card">
+            <div className="Noticias-logo">
                 <img src={logo} alt={`${name} Logo`} />
             </div>
-            <div className="herram-info">
+            <div className="Noticias-info">
                 <h2>{name}</h2>
                 <p>{description}</p>
                 <a href={link} target="_blank" rel="noopener noreferrer">
@@ -17,6 +17,4 @@ const TarjetaHerramienta = ({ name, description, link, logo }) => {
     );
 };
 
-export default TarjetaHerramienta;
-
-
+export default TarjetaNoticias;

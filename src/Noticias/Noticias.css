@@ -1,14 +1,14 @@
-.container-herra{
+.container-Noticia {
     margin-top: 10%;
     width: 100%;
 }
-.container-herra h1 {
-    color: #000000;
+.container-Noticia h1 {
+    color: #ffffff;
     font-weight: bolder;
     margin-left: 5%;
 }
 
-.herram-card {
+.Noticias-card {
     border: 1px solid #000000;
     margin: 10px;
     padding: 2%;
@@ -16,13 +16,13 @@
     background-color: rgba(255, 253, 253, 0.632);
 }
 
-.container-herra  p {
+.container-Noticia p {
     color: #000000;
     font-size: large;
     font-weight: bolder;
 }
 
-.herram-logo img{
+.Noticias-logo img {
     margin-left: 0%;
     border: #000000;
     max-width: 20%;
@@ -31,19 +31,10 @@
     border-radius: 10%;
 }
 
-.container-herra a {
+.container-Noticia a {
     display: inline-block;
-    text-align: center;
-    width: 10%;
     padding: 10px;
     background-image: linear-gradient(150deg,#9500ff,#09f,#00ddff);
-    border-radius: 8px;
-    color: white;
-    display: grid;
-    font-size: 15px;
-    padding: 4px;
-    cursor: pointer;
-    transition: .3s;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -51,6 +42,6 @@
     font-weight: bolder;
 }
 
-.container-herra  a:hover {
+.container-Noticia a:hover {
     background-color: #4b0072;
 }

@@ -1,22 +1,36 @@
 .formRegistro {
-    padding: 200px;
+  margin-top: 21%;
+  margin-left: 50%;
+  margin-bottom: 9%;
+  display: flex;
+  align-items: center;
+  background-image:radial-gradient( rgb(255, 255, 255),rgba(167, 246, 255, 0.854), rgba(255, 255, 255, 0.187));
+  padding: 10%;
+  border-radius: 5%;
 }
+
 section {
     text-align: center;
     margin: 20px;
-  }
-  
-  h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .Formulario {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
     align-items: center;
   }
   
+  h1 {
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .Formulario form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  margin-bottom: 70%;
+  }
 
   input {
     width: 100%;
@@ -29,12 +43,25 @@ section {
   
 
   button {
-    background-color: #bb18fd;
+    border: 0;
+    background-image: linear-gradient(150deg,#9500ff,#09f,#00ddff);
+    border-radius: 8px;
+    color: white;
+    display: grid;
+    font-size: 15px;
+    padding: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: .3s;
     color: white;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+  }
+
+  button :hover{
+    background-color: #3d0055;
   }
   
 
@@ -59,4 +86,3 @@ section {
       max-width: 600px;
     }
   }
-  
