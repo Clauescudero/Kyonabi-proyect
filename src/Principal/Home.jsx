@@ -7,7 +7,7 @@ const Home = () => {
       <div className="card bg">
         <img src="https://media.discordapp.net/attachments/1143374824299827302/1171586313850470410/Banner1.png?ex=655d37c8&is=654ac2c8&hm=fb4c93f98c5f521ea7986093d91881ca02450abb443aa72f9df132fc9a195740&=" className="card-img-banner" alt="Stony Beach" />
         <div className="card-img-overlay">
-          <h5 className="card-title-banner">¿Qué es Kyonabi?</h5>
+          <h5 className="card-title-banner">¿Qué es Kyōnabi?</h5>
           <p className="card-text">
             Somos una comunidad de apoyo educativo en línea, reconocida por crear un ambiente idóneo para el intercambio de conocimientos, aprendizaje y desarrollo personal, buscando inspirar la creatividad y la autodeterminación con el fin de crear un mundo donde todas las niñas, niños y adolescentes tengan oportunidades de aprender.
           </p>

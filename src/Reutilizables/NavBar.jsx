@@ -8,7 +8,7 @@ const NavBar = () => {
     <nav  style={{ backgroundColor:'rgb(62, 0, 98)', height:'5rem' }} className="navbar navbar-dark  fixed-top">
       <div className="container-fluid">
         <Link to="/">
-        <a style={{ textDecoration:'none' }}  className="navbar-brand" href="/">Kyonabi</a>
+        <a style={{ textDecoration:'none', fontWeight:'bolder' }}  className="navbar-brand" href="/">Kyōnabi</a>
         </Link>
         <div className="d-flex align-items-center">
         <Link to="/Login">
