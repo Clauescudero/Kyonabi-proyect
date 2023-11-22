@@ -14,7 +14,7 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 180px;
+  margin-top: 100px;
   background-color: #ffff;
 
 }
@@ -22,6 +22,7 @@
 .cardEquipo img {
   width: 100%;
   height: auto;
+  align-items: center;
 }
 
 .cardEquipo-body {
@@ -30,11 +31,10 @@
 }
 
 .cardEquipo-title {
-  font-size: 22px;
+  font-size: 15px;
   /* Adjust the font size as needed */
   margin-bottom: 15px;
-  text-align: center;
-
+  text-align: center;     
 }
 
 
@@ -54,20 +54,19 @@
 
 .tituloPrincipal h1 {
 
-  text-align: center;
+  text-align: left;
   padding-top: 100px;
   color: #ffff;
-  font-size: 100px;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  font-size: 60px;
+  margin-bottom: 0px;
+
 
 }
 
 .tituloPrincipal p {
   text-align: justify;
-  padding-top: 100px;
   color: #ffff;
-  font-size: 40px;
-  margin-bottom: 60px;
-  margin-top: 20px;
+  font-size: 25px;
+  margin-bottom: 50px;
+  margin-top: 40px;
 }
