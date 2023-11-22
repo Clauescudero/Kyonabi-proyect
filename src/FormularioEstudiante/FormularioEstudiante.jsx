@@ -5,7 +5,7 @@ const FormularioEstudiantes = () => {
     return (
         <div className="containers-registro">
             <div className="formulario-registro">
-                <h1>¡Bienvenido a Kyonabi!</h1>
+                <h1>¡Bienvenido a Kyōnabi!</h1>
                 <form action="">
                     <div className="usuario-registro">
                         <label htmlFor="text">Nombre de usuario</label>

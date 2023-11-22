@@ -1,9 +1,12 @@
 .formRegistro {
   margin-top: 21%;
   margin-left: 50%;
-  margin-bottom: 26.8%;
+  margin-bottom: 9%;
   display: flex;
   align-items: center;
+  background-image:radial-gradient( rgb(255, 255, 255),rgba(167, 246, 255, 0.854), rgba(255, 255, 255, 0.187));
+  padding: 10%;
+  border-radius: 5%;
 }
 
 section {

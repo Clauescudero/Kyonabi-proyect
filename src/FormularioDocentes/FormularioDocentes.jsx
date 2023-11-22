@@ -79,7 +79,7 @@ const FormularioDocentes = () => {
     return (
         <div className="containers-registro-docente">
             <div className="formulario-registro-docente">
-                <h1>Bienvenido a Kyonabi!</h1>
+                <h1>¡Bienvenido a Kyōnabi!</h1>
                 <form onSubmit={handleSubmit}>
                     <div className="usuario-registro-docente">
                         <label htmlFor="nombreUsuario">Nombre de usuario</label>
