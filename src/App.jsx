@@ -32,6 +32,7 @@ import ProfileUser from "./Perfil/ProfileUser.jsx";
 import Noticias from "./Noticias/Noticias.jsx"
 
 
+
 function App () {
   const audioSource = 'src/Music';
   return (
@@ -65,6 +66,7 @@ function App () {
         <Route path="/equipo" element={<Equipo/>}></Route>
         <Route path="/Perfil/:id" element={<ProfileUser />} />
         <Route path="/noticias" element={<Noticias/>}></Route>
+
 
 
       </Routes>

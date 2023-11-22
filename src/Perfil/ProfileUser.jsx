@@ -17,7 +17,6 @@ const ProfileUser = () => {
         console.error('Error al obtener datos del usuario:', error);
       }
     };
-
     obtenerUsuario();
   }, [id]);
   const [selectedImage, setSelectedImage] = useState(null);
