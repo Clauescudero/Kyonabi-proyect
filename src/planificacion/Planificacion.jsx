@@ -8,7 +8,7 @@ const Plani = () => {
       <div className='title-Creatividad'>
         <h1>Planificación</h1>
         <p>
-        La creatividad es la capacidad de crear​ nuevas ideas o conceptos, de nuevas asociaciones entre ideas y conceptos conocidos, que habitualmente producen soluciones originales. La creatividad es sinónimo del "pensamiento original", la "imaginación constructiva", el "pensamiento divergente" o el "pensamiento creativo"
+        La planificación es el proceso de estructurar una serie de acciones que se llevan a cabo para cumplir determinados objetivos. Definiendo los procedimientos y estrategias a seguir para alcanzar ciertas metas, ¡Queremos que puedas planificar de forma entretenidad para innovar en tus clases!
         </p>
       </div>
       <div className="main-content-Creatividad">

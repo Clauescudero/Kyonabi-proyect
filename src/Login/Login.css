@@ -40,7 +40,16 @@ section {
   
 
   button {
-    background-color: #bb18fd;
+    border: 0;
+    background-image: linear-gradient(150deg,#9500ff,#09f,#00ddff);
+    border-radius: 8px;
+    color: white;
+    display: grid;
+    font-size: 15px;
+    padding: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: .3s;
     color: white;
     padding: 10px 15px;
     border: none;

@@ -1,12 +1,14 @@
 .containers-registro {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
-    background: linear-gradient( #70f0e597,rgba(167, 246, 255, 0.854), rgba(255, 255, 255, 0.187));
+    margin-top: 40%;
     background-size: cover;
     margin-bottom: 10%;
     margin-left: 5%;   
-
+    max-height: 100%;
+    width: 100%;
+    align-content: center;
+    margin-left: 25%;
   }
   
   .formulario-registro-docente {
@@ -31,7 +33,7 @@
   
   .usuario-registro input {
     padding: 10px;
-    background-color: var(--clr-blue, rgb(39, 141, 243));
+    background-color: var(--clr-blue, rgb(147, 201, 255));
     border: 1px solid white;
     font-size: 15px;
     color: #f4f6f9;
@@ -53,7 +55,6 @@
     font-size: var(--font-md);
     color: rgb(12, 0, 0);
     padding: 0.5em 1.5em;
-    background-color: #eacefa;
     border: none;
     border-radius: 3rem;
     cursor: pointer;

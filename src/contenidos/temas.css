@@ -1,4 +1,3 @@
-
 .relacionadas {
     padding: 50%;
     border: none ;
@@ -10,10 +9,11 @@
     border-radius: 10px;
     cursor: pointer;
     margin-top: 30%;
-    margin-bottom: 60%;
     transition: .3s;
     text-decoration: none;
-}
+    margin-left: 90%;
+    align-items: center;
+} 
 
 .relacionadas h4{
     text-decoration: none;
@@ -25,25 +25,27 @@
     color: #84e4e4;
     transition:3.s ;
 }
+
 .relacionadas:active{
     transform: scale(0.12);
 }
 
 
 .distribuicion{
+    margin-top: 20%;
+    margin-bottom: 31.5%;
+
     display: grid;
     grid-template-columns: repeat(
         auto-fit,minmax(
             150px,1fr
         )
     );
-    gap: 20px;
-    padding: 100px;
 }
 
 .secion img{
     width: 150px;
     height: 150px;
     border-radius: 10px;
-
-}
+    margin: 10px;
+} 

@@ -41,7 +41,7 @@ const NavBar = () => {
               <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">
                 Menú
               </h5>
-              <button
+              <button 
                 type="button"
                 className="btn-close btn-close-white"
                 data-bs-dismiss="offcanvas"

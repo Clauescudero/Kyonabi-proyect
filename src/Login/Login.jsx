@@ -35,7 +35,7 @@ export function Login({ setUser }) {
                         onChange={(e) => setContraseña(e.target.value)}
                         placeholder="Ingresa la contraseña"
                     />
-                    <button type="submit">Iniciar sesión</button>
+                    <button className="log-but" type="submit">Iniciar sesión</button>
                 </form>
                 {error && <p id="error">Todos los campos son obligatorios!</p>}
             </section>
