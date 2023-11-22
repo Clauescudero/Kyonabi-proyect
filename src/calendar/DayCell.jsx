@@ -16,6 +16,8 @@ function DayCell() {
             alert('¡Tomate un descanso para aclarar la mente! Recuerda: Cuidar de ti y que no es la situación lo que te frustra, es el como la enfrentas; Siempre puedes ser mejor.')
         } else if ((colors[clickCount] === 'DarkSlateBlue')) {
             alert('Ahora no te sientes de lo mejor, y por eso estamos aquí para apoyarte en cada paso del camino, ¡porque Tú importas!')
+        } else if((colors[clickCount] === 'Gold')){
+            alert('¡Nos hace muy feliz que sea así! : )')
         }
     }
 

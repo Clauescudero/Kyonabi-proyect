@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image:radial-gradient( #70f0e597,rgb(167, 246, 255), rgba(255, 255, 255, 0.374));
+  background-image:radial-gradient( #70f0e597,rgba(167, 246, 255, 0.854), rgba(255, 255, 255, 0.187));
   border-radius: 30px;
 }
 
@@ -53,6 +53,7 @@ h1 {
 
 a{
   text-decoration: none;
+  color: aliceblue;
 }
 
 .btn {

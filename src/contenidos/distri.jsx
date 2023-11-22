@@ -3,8 +3,6 @@ import './temas.css'
 import { Link } from "react-router-dom";
 const Distribuicion = () => {
 
-
-
   return (
     <div className="distribuicion">
       <Link to="/Matematicas">
@@ -19,7 +17,6 @@ const Distribuicion = () => {
       <Link to="/Historia">
         <Temas temas={"Historia"} imagenes={'src/assets/kyuhistoria.png'} />
       </Link>
-      <Temas temas={"Recursos"} imagenes={'src/assets/kyurecursos.png'} />
       <Link to="/Economia">
         <Temas temas={"Economía"} imagenes={'src/assets/kyueconomia.png'} />
       </Link>
@@ -29,12 +26,8 @@ const Distribuicion = () => {
       <Link to="/Creatividad">
         <Temas temas={"Creatividad"} imagenes={'src/assets/kyucreatividad.png'} />
       </Link>
-
     </div>
-
-
   )
-
 }
 
 export default Distribuicion;

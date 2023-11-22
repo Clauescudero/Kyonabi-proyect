@@ -34,20 +34,33 @@
 }
 
 .boton-perfil button {
-    border: 1px solid #000000;
     text-align: center;
-    font-size: large;
+    align-items: center;
+    font-size: 80px;
     font-weight: bold;
     white-space: nowrap; 
-    max-width: 25%;
+    max-width: 45%;
     display:flex;
+    border: 0;
+    background-image: linear-gradient(150deg,#d192ff,rgb(5rgb(97, 234, 255) 255),#00ddff);
+    border-radius: 8px;
+    display: grid;
+    font-size: 15px;
+    padding: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: .3s;
 }
 
 .boton-perfil button a {
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
 } 
+
+.boton-perfil button :hover{
+    background-color: rgb(226, 236, 243);
+}
 
 .calendar-container .legend {
     margin-top: 4rem;

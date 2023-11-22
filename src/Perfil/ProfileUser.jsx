@@ -17,7 +17,7 @@ const ProfileUser = () => {
                 <p>Edad: {userData.age}</p>
                 <p>Email: {userData.email}</p>
                 <Link to="/calendar">
-                    <button className="btn-go-to-calendar">Ir al Calendario</button>
+                    <button className="btn-go-to-calendar">Ir al Seguimiento emocional</button>
                 </Link>
             </div>
             <div className="user-avatar">

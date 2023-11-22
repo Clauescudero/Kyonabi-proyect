@@ -1,5 +1,7 @@
 .formRegistro {
-  margin-top: 10%;
+  margin-top: 21%;
+  margin-left: 50%;
+  margin-bottom: 26.8%;
   display: flex;
   align-items: center;
 }
@@ -17,7 +19,7 @@ section {
     margin-top: 5%;
     margin-bottom: 5%;
   }
-  
+
   .Formulario form{
     display: flex;
     flex-direction: column;
@@ -25,9 +27,7 @@ section {
     margin-top: 5%;
     margin-bottom: 5%;
   margin-bottom: 70%;
-
   }
-  
 
   input {
     width: 100%;
@@ -40,7 +40,16 @@ section {
   
 
   button {
-    background-color: #bb18fd;
+    border: 0;
+    background-image: linear-gradient(150deg,#9500ff,#09f,#00ddff);
+    border-radius: 8px;
+    color: white;
+    display: grid;
+    font-size: 15px;
+    padding: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: .3s;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -74,4 +83,3 @@ section {
       max-width: 600px;
     }
   }
-  
