@@ -1,139 +1,191 @@
-import React, { useState } from "react";
+
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import './FormularioDocentes.css';
 
 const FormularioDocentes = () => {
-    const [nombreUsuario, setNombreUsuario] = useState('');
-    const [edad, setEdad] = useState('');
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [repetirPassword, setRepetirPassword] = useState('');
-    const [materias, setMaterias] = useState('');
-    const [experienciaDocente, setExperienciaDocente] = useState('');
+  const [materiasSeleccionadas, setMateriasSeleccionadas] = useState([]);
+  const [otrasMaterias, setOtrasMaterias] = useState('');
+  const [rol, setRol] = useState('tutor');
+  const [userCreate, setUserCreate] = useState(false);
 
-    const handleNombreUsuarioChange = (e) => {
-        setNombreUsuario(e.target.value);
+  const handleCheckboxChange = (event) => {
+    const materiaSeleccionada = event.target.value;
+    const isChecked = event.target.checked;
+
+    if (isChecked) {
+      setMateriasSeleccionadas([...materiasSeleccionadas, materiaSeleccionada]);
+    } else {
+      setMateriasSeleccionadas(materiasSeleccionadas.filter((materia) => materia !== materiaSeleccionada));
+    }
+  };
+
+  const handleOtrasMateriasChange = (event) => {
+    setOtrasMaterias(event.target.value);
+  };
+
+  const navigate = useNavigate();
+
+  const [name, setName] = useState("");
+  const [age, setAge] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleName = (e) => {
+    setName(e.target.value);
+  };
+
+  const handleAge = (e) => {
+    setAge(e.target.value);
+  };
+
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handlePassword = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleSubmit = () => {
+    if (!name || !age || !email || !password || materiasSeleccionadas.length === 0) {
+      alert("Todos los campos son obligatorios");
+      return;
+    }
+
+    const confirmPassword = document.getElementById("Confirmarpassword").value;
+
+    if (password !== confirmPassword) {
+      alert("Las contraseñas deben ser iguales");
+      return;
+    }
+
+    const user = {
+      name: name,
+      age: parseInt(age),
+      email: email,
+      password: password,
+      rol: rol,
+      subjects: [...materiasSeleccionadas, otrasMaterias].filter(subject => subject),
+      description: document.getElementById("aboutMe").value,
     };
 
-    const handleEdadChange = (e) => {
-        setEdad(e.target.value);
-    };
-
-    const handleEmailChange = (e) => {
-        setEmail(e.target.value);
-    };
-
-    const handlePasswordChange = (e) => {
-        setPassword(e.target.value);
-    };
-
-    const handleRepetirPasswordChange = (e) => {
-        setRepetirPassword(e.target.value);
-    };
-    const handleMateriasChange = (e) => {
-        // Obtener todas las opciones seleccionadas
-        const selectedOptions = Array.from(e.target.selectedOptions, option => option.value);
-        setMaterias(selectedOptions);
-    };
-
-    const handleExperienciaDocenteChange = (e) => {
-        setExperienciaDocente(e.target.value);
-    };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-
-        // Verifica si las contraseñas coinciden
-        if (password !== repetirPassword) {
-            console.error('Las contraseñas no coinciden');
-            return;
+    fetch("http://localhost:8080/api/v1/crear", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(user),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
         }
+        return response.json();
+      })
+      .then((data) => {
+        console.log(data);
+        setName("");
+        setAge("");
+        setEmail("");
+        setPassword("");
+        setMateriasSeleccionadas([]);
+        setRol("tutor");
 
-        try {
-            // Envía la información al backend para almacenar en la base de datos
-            const response = await fetch('http://localhost:5000/api/docentes', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    nombreUsuario,
-                    edad,
-                    email,
-                    password,
-                    materia,
-                    experienciaDocente,
-                }),
-            });
-
-            if (response.status === 201) {
-                console.log('Docente creado con éxito');
-                // Puedes hacer alguna acción adicional después de crear el docente, como redireccionar a otra página
-            } else {
-                console.error('Error al crear el docente');
-            }
-        } catch (error) {
-            console.error('Error en la solicitud al backend', error);
+        if (data.status === 201) {
+          setUserCreate(true);
+        } else {
+          alert("Error al registrar usuario");
         }
-    };
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("Error al registrar usuario");
+      });
+  };
 
-    return (
-        <div className="containers-registro-docente">
-            <div className="formulario-registro-docente">
-                <h1>¡Bienvenido a Kyōnabi!</h1>
-                <form onSubmit={handleSubmit}>
-                    <div className="usuario-registro-docente">
-                        <label htmlFor="nombreUsuario">Nombre de usuario</label>
-                        <input type="text" id="nombreUsuario" name="nombreUsuario" onChange={handleNombreUsuarioChange} />
+  useEffect(() => {
+    if (userCreate) {
+      navigate('/login');
+    }
+  }, [navigate, userCreate]);
 
-                        <label htmlFor="edad">Edad</label>
-                        <input type="text" id="edad" name="edad" onChange={handleEdadChange} />
+  return (
+    <div className="containers-registro-docente">
+      <div className="formulario-registro-docente">
+        <h1>¡Bienvenido a Kyōnabi!</h1>
+        <form action="" >
+          <div className="usuario-registro">
+            <label htmlFor="text">Nombre de usuario</label>
+            <input
+              type="text"
+              className="form-control"
+              id="name"
+              onChange={handleName}
+            />
+            <label htmlFor="text">Edad</label>
+            <input
+              type="number"
+              className="form-control"
+              id="age"
+              onChange={handleAge}
+            />
+            <label htmlFor="text">Email</label>
+            <input
+              type="email"
+              className="form-control"
+              id="age"
+              onChange={handleEmail}
+            />
+            <label htmlFor="text">Contraseña</label>
+            <input
+              type="password"
+              className="form-control"
+              id="password"
+              onChange={handlePassword}
+            />
+            <label htmlFor="text">Repetir Contraseña</label>
+            <input type="password" id="Confirmarpassword" name="password" />
+            <section id="seleccion">
+              <label htmlFor="text">Selecciona materias</label>
+              <br />
+              {['Matemáticas', 'Tecnología', 'Idiomas', 'Historia', 'Recursos', 'Economía', 'Habilidades', 'Creatividad', 'Otras'].map(
+                (materia) => (
+                  <label key={materia}>
+                    <input
+                      type="checkbox"
+                      name="materias"
+                      value={materia}
+                      onChange={handleCheckboxChange}
+                      checked={materiasSeleccionadas.includes(materia)}
+                    />
+                    {materia}
+                  </label>
+                )
+              )}
+              {materiasSeleccionadas.includes('Otras') && (
+                <label>
+                  Otras:
+                  <input
+                    type="text"
+                    name="otrasMaterias"
+                    value={otrasMaterias}
+                    onChange={handleOtrasMateriasChange}
+                  />
+                </label>
+              )}
+            </section>
 
-                        <label htmlFor="email">Email</label>
-                        <input type="text" id="email" name="email" onChange={handleEmailChange} />
-
-                        <label htmlFor="password">Contraseña</label>
-                        <input type="password" id="password" name="password" onChange={handlePasswordChange} />
-
-                        <label htmlFor="repetirPassword">Repetir Contraseña</label>
-                        <input type="password" id="repetirPassword" name="repetirPassword" onChange={handleRepetirPasswordChange} />
-
-                        <label htmlFor="materias">Materias (En el caso de selección múltiple intenta CTRL+Click sobre las materias)</label>
-                        <select id="materias" name="materias" multiple value={materias} onChange={handleMateriasChange}>
-                        <label>Materias (selección múltiple)</label>
-                        <div>
-                            <label htmlFor="matematicas">
-                                <input
-                                    type="checkbox"
-                                    id="matematicas"
-                                    value="matematicas"
-                                    checked={materias.includes("matematicas")}
-                                    onChange={handleMateriasChange}
-                                />
-                                Matemáticas
-                            </label>
-                            </div>
-
-                            <option value="matematicas">Matemáticas</option>
-                            <option value="historia">Historia</option>
-                            <option value="recursos">Recursos</option>
-                            <option value="creatividad">Creatividad</option>
-                            <option value="tecnología">Tecnología</option>
-                            <option value="idiomas">Idiomas</option>
-                            <option value="habilidades">Habilidades blandas</option>
-                            <option value="otra">Otra</option>
-                        </select>
-
-                        <label htmlFor="experienciaDocente">Experiencia como Docente</label>
-                        <textarea id="experienciaDocente" name="experienciaDocente" onChange={handleExperienciaDocenteChange}></textarea>
-                    </div>
-
-                    <div className="btn-container-registro-docente">
-                        <button className="btn-registro-docente" type="submit">Crear cuenta</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    );
+            <label htmlFor="aboutMe">Experiencia como Docente</label>
+            <textarea id="aboutMe"></textarea>
+          </div>
+          <div className="btn-container-registro-docente">
+            <button className="btn-registro-docente" type="submit" onClick={handleSubmit}>Crear cuenta</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
 };
 
 export default FormularioDocentes;

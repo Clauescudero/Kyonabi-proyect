@@ -28,9 +28,10 @@ import Matematica from "./contenidos-principales/matematicas/matematicas.jsx";
 import Skills from "./contenidos-principales/skills/skills.jsx";
 import Tecnologia from "./contenidos-principales/tecnologia/tecnologia.jsx";
 import Equipo from './Equipo/Equipo';
-import ProfileUser from './Perfil/ProfileUser.jsx'
-import Plani from "./planificacion/Planificacion";
-import Noticias from "./Noticias/Noticias.jsx";
+import ProfileUser from "./Perfil/ProfileUser.jsx";
+import Noticias from "./Noticias/Noticias.jsx"
+
+
 
 function App () {
   const audioSource = 'src/Music';
@@ -42,9 +43,9 @@ function App () {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/registro' element={<Registro />} />
-        <Route path='/Calendar' element={<Calendar />} />
+        <Route path='/Calendar/' element={<Calendar />} />
         <Route path='/Docentes' element={<Docentes />} />
-        <Route path='/Docentes/Planificacion' element={<Planificacion />} />
+        <Route path='/Planificacion' element={<Planificacion />} />
         <Route path='Creatividad' element={<Creatividad />} />
         <Route path='/sugerencia' element={<Suger />} />
         <Route path='/contenidos' element={<Distribuicion />} />
@@ -53,7 +54,7 @@ function App () {
         <Route path="/FormularioEstudiante" element={<FormularioEstudiantes />}/>
         <Route path="/Login" element={<Login />} />
         <Route path="/Tutores" element={<NuestrosTutores/>}></Route>
-        <Route path="/herramientas" element={<Herramientas/>}></Route>
+        <Route path="/Herramientas" element={<Herramientas/>}></Route>
         <Route path="/Colaboradores" element={<Colaboradores/>}></Route>
         <Route path="/Ciencia" element={<Ciencias/>}></Route>
         <Route path="/Economia" element={<Economia/>}></Route>
@@ -63,9 +64,11 @@ function App () {
         <Route path="/Skills" element={<Skills/>}></Route>
         <Route path="/Tecnologia" element={<Tecnologia/>}></Route>
         <Route path="/equipo" element={<Equipo/>}></Route>
-        <Route path="/Perfil" element={<ProfileUser/>}></Route>
-        <Route path="/recursos/creatividad" element={<Plani/>}></Route>
+        <Route path="/Perfil/:id" element={<ProfileUser />} />
         <Route path="/noticias" element={<Noticias/>}></Route>
+
+
+
       </Routes>
       <MusicPlayer src= {audioSource}></MusicPlayer> 
       <Footer />

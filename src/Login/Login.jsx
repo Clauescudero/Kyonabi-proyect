@@ -1,46 +1,159 @@
-import "./Login.css";
-import { useState } from 'react';
+// Recordar: JSX es una extensión de JavaScript que permite escribir código similar a HTML en archivos de JavaScript
+// Se está importando la biblioteca de React. Cada archivo que contiene componentes debe importar la biblioteca de React para que pueda ser utilizado.
+import React, { useState, useEffect } from "react";
+import { jwtDecode } from "jwt-decode"
+import { useNavigate } from "react-router-dom";
+import { useUser } from "../Usercontext/UserContext";
+import './Login.css'
 
-export function Login({ setUser }) {
-    const [nombre, setNombre] = useState("");
-    const [contraseña, setContraseña] = useState("");
-    const [error, setError] = useState(false);
+// Importa la función useState de React, que permite a los componentes de función tener estado local.
+// Importa la función useEffect de React, que se utiliza para realizar efectos secundarios en componentes funcionales.
+// jwt-decode = Esta función se utiliza para decodificar tokens JWT (JSON Web Tokens)
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
 
-        if (nombre === "" || contraseña === "") {
-            setError(true);
-            return;
-        }
-        setError(false)
+const UserLogin = () => {
+  const navigate = useNavigate();
+  const { setUser } = useUser();
 
-        setUser([nombre])
+  // Estado local para el correo electrónico, contraseña para indicar si el usuario fue logueado
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [userLogueado, setUserLogueado] = useState({});
+  const [userLocal, setUserLocal] = useState({});
+
+  // Funciones para manejar cambios en los campos de entrada
+  const handleEmail = (e) => { // El evento que escucha corresponde a la escritura en el input
+    // e = evento // target = input // value = el valor del input del email
+    setEmail(e.target.value);
+  };
+
+  const handlePassword = (e) => {// Misma lógica
+    // e = evento // target = input // value = el valor del input de la contraseña
+    setPassword(e.target.value);
+  };
+
+  // Elimina la información del usuario almacenada en el almacenamiento local y recarga la página para simular un cierre de sesión.
+  const handleLogout = () => {
+    localStorage.removeItem("user");
+    window.location.reload();
+    }
+  
+  // Función para manejar el envío del formulario
+  const handleSubmit = () => {
+    if (!email || !password) {
+      alert("Todos los campos son obligatorios");
+      return;
+    }
+    // Construir un objeto de usuario con la información ingresada
+    const user = {
+      email: email,
+      password: password,
     };
+    // Limpiar los campos de entrada
+    document.getElementById("email").value = "";
+    document.getElementById("password").value = "";
+  
+  // Realiza una solicitud POST al servidor con la información de inicio de sesión proporcionada por el usuario.
+  // Es necesario instalar cors en nuestro backend que nos permite dar funcionalidad a nuestro proyecto en node para poder gestionar el tema de los permisos  
+    fetch("http://localhost:8080/api/v1/login", {  // Misma ruta definida en backend 
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json", // Cabecera que indica que el contenido es de tipo JSON
+      },
+      body: JSON.stringify(user), //convertir objeto en JS en una cadena de texto en formato json
+    })
+      .then((response) => response.json()) // Después de realizar la solicitud HTTP, el método .json() se utiliza para extraer y parsear la respuesta como JSON.
+      .then((data) => {  
+        // Si la solicitud es exitosa, actualiza el estado userLogueado con la respuesta del servidor y almacena el token JWT en el almacenamiento local.
+        setEmail(""); // Se limpian los estados despues de enviar el formulario
+        setPassword("");
+        setUserLogueado(data); // actualiza el estado userLogueado
+        const token = jwtDecode(JSON.stringify(data.token)); // Decodifica el token recibido del servidor
+        console.log(token);
+        localStorage.setItem("token", JSON.stringify(data.token)); // Almacena el token JWT en el almacenamiento local del navegador. Esto es común en la autenticación para mantener el estado de sesión del usuario incluso después de recargar la página.
+      });
+  };
 
-    return (
-        <div className="formRegistro">
-            <section >
-                <h1>Login</h1>
-                <form className="Formulario" onSubmit={handleSubmit}>
-                    <input
-                        type='text'
-                        value={nombre}
-                        onChange={(e) => setNombre(e.target.value)}
-                        placeholder="Ingrese el usuario"
-                    />
-                    <input
-                        type='password'
-                        value={contraseña}
-                        onChange={(e) => setContraseña(e.target.value)}
-                        placeholder="Ingresa la contraseña"
-                    />
-                    <button className="log-but" type="submit">Iniciar sesión</button>
-                </form>
-                {error && <p id="error">Todos los campos son obligatorios!</p>}
-            </section>
+  // Recuerda: JSON.parse es una función en JavaScript que se utiliza para convertir una cadena JSON en un objeto JavaScript
+  // Recuerda: JSON.stringify es un método en JavaScript que se utiliza para convertir un objeto JavaScript en una cadena JSON
+  
+  //Almacena la información del usuario en el almacenamiento local si el estado userLogueado tiene un status de 200.
+  useEffect(() => {
+    if (userLogueado.status === 200) {
+      localStorage.setItem("user", JSON.stringify(userLogueado.data));
+      
+      setUser(userLogueado.data); 
+      navigate("/");
+      window.location.reload();
+      // Actualiza el contexto con el nuevo usuario
+      
+    }
+  }, [navigate, setUser, userLogueado]);
+
+  useEffect(() => {
+    if (localStorage.getItem("user") !== null) {
+      setUserLocal(JSON.parse(localStorage.getItem("user")));
+    }
+  }, [setUser]);
+  
+
+  // El componente devuelve el formulario JSX con los manejadores de eventos vinculados
+  return (
+    <>
+      <div className="formRegistro">
+        <section>
+          <div className="col-6">
+            <h1>Login</h1>
+            <form className="Formulario" >
+              <div className="mb-3">
+                <label htmlFor="email" className="form-label">
+                 
+                </label>
+                <input
+                  type="email"
+                  className="form-control"
+                  id="email"
+                  placeholder="Ingrese el usuario"
+                  onChange={handleEmail}
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="password" className="form-label">
+                  
+                </label>
+                <input
+                  type="password"
+                  className="form-control"
+                  id="password"
+                  placeholder="Ingresa la contraseña"
+                  onChange={handlePassword}
+                />
+              </div>
+              <button
+                type="button"
+                className="btn btn-primary"
+                onClick={handleSubmit}
+              >
+                Enviar
+              </button>
+            </form>
+          </div>
+        </section>
+        <div className="row">
+          <div className="col-6">
+            {localStorage.getItem("user") !== null && (
+              <div>
+                <h3>Usuario logueado</h3>
+                <p>Nombre: {userLocal.name}</p>
+                <p>Apellido: {userLocal.lastName}</p>
+                
+              </div>
+            )}
+          </div>
         </div>
-    );
-}
+      </div>
+    </>
+  );
+};
 
-export default Login;
+export default UserLogin;
