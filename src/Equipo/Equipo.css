@@ -19,6 +19,10 @@
 
 }
 
+#tituloPrincipal-container{
+  padding: 2%;
+}
+
 .cardEquipo img {
   width: 100%;
   height: auto;
