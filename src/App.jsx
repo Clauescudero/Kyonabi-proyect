@@ -30,7 +30,7 @@ import Tecnologia from "./contenidos-principales/tecnologia/tecnologia.jsx";
 import Equipo from './Equipo/Equipo';
 import ProfileUser from "./Perfil/ProfileUser.jsx";
 import Noticias from "./Noticias/Noticias.jsx"
-
+import Contacto from "./Contacto/contacto.jsx";
 
 
 function App () {
@@ -66,6 +66,7 @@ function App () {
         <Route path="/equipo" element={<Equipo/>}></Route>
         <Route path="/Perfil/:id" element={<ProfileUser />} />
         <Route path="/noticias" element={<Noticias/>}></Route>
+        <Route path="/Contacto" element={<Contacto/>}></Route>
 
 
 
