@@ -233,11 +233,7 @@ const NavBar = () => {
                     Docentes
                   </a>
                   <ul style={{ backgroundColor:'#6a00a7' }} className="dropdown-menu dropdown-menu-dark">
-                    <li>
-                      <a className="dropdown-item" href="/recursos/creatividad">
-                        Recursos
-                      </a>
-                    </li>
+
                     <li>
                       <Link to="/Planificacion">
                       <a className="dropdown-item" href="#">
@@ -259,17 +255,6 @@ const NavBar = () => {
                   </ul>
                 </li>
               </ul>
-              <form className="d-flex mt-3" role="search">
-                <input
-                  className="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                ></input>
-                <button className="btn btn-success" type="submit">
-                  Search
-                </button>
-              </form>
             </div>
           </div>
         </div>

@@ -12,7 +12,6 @@
   }
   
   .title-Historia h1 {
-    text-align: left;
     padding-top: 100px;
     color: #ffff;
     font-size: 60px;
@@ -21,24 +20,21 @@
   }
   
   .title-Historia p {
-    text-align: justify;
     color: #ffff;
+    text-align: justify;
     font-size: 25px;
     margin-bottom: 50px;
     margin-top: 40px;
   }
   .contenidos-materiales {
-    max-width: 1000px;
-    margin: 0 auto;
+  
+    margin: 0;
     padding: 0px;
     font-family: Arial, sans-serif;
   
   }
   
-  .title-Historia {
-    text-align: center;
-    margin-bottom: 20px;
-  }
+ 
   
   .main-content-Historia {
     display: flex;

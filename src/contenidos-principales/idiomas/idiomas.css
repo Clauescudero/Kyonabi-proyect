@@ -9,16 +9,19 @@
   justify-content: center; /* Centrar horizontalmente el contenido */
   align-items: center; 
   padding-inline: 20px;
+  margin-right: 50px;
 }
 
 .title-idiomas h1 {
-  text-align: left;
+  margin-right: 150px;
   padding-top: 100px;
   color: #ffff;
   font-size: 60px;
   margin-bottom: 0px;
+  
 
 }
+
 
 .title-idiomas p {
   text-align: justify;
@@ -26,14 +29,10 @@
   font-size: 25px;
   margin-bottom: 50px;
   margin-top: 40px;
+  margin-right: 120px;
 }
-.contenidos-materiales {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0px;
-  font-family: Arial, sans-serif;
 
-}
+
 
 .title-idioma {
   text-align: center;
@@ -43,6 +42,7 @@
 .main-content-idiomas {
   display: flex;
   justify-content: flex-start;
+  margin-right: 50px;
   
 }
 .cards-container-idiomas {

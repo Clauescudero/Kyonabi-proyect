@@ -1,13 +1,13 @@
 .formulario {
-    margin-left: 50%;
+    margin-left: 200px;
     display: flex;
     /* flex-direction:column; */
     align-items: center;
     padding-top: 100px;
-    width: 100%;
+    width: 80%;
     /* Puedes ajustar el ancho del formulario */
-    max-width: 1000px;
-    margin-bottom: 5.4%; /* solo para que el fondo sirva mientras*/
+    
+    margin-bottom: 20px; /* solo para que el fondo sirva mientras*/
 }
 
 

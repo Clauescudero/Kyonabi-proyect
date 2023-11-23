@@ -5,13 +5,13 @@
 }
 
 .content-container {
-  margin-top: 9%;
-  margin-top: 11%; /* para hacer el fondo normal por mientras tanto*/
+ 
   display: flex;
   justify-content: center;
   align-items: center;
   background-image:radial-gradient( rgb(255, 255, 255),rgba(167, 246, 255, 0.854), rgba(255, 255, 255, 0.187));
   border-radius: 30px;
+  margin-bottom: 30px;
 }
 
 .text-and-images-container {

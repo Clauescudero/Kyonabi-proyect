@@ -1,5 +1,5 @@
 .relacionadas {
-    padding: 50%;
+    padding: 30%;
     border: none ;
     width: 100%;
     height: 200px;
@@ -8,15 +8,16 @@
     font-style:0;
     border-radius: 10px;
     cursor: pointer;
-    margin-top: 30%;
+    margin-top: 20%;
     transition: .3s;
     text-decoration: none;
-    margin-left: 90%;
     align-items: center;
+    margin: 40px;
 } 
 
 .relacionadas h4{
     text-decoration: none;
+    margin: 32px;
 }
 
 
@@ -32,13 +33,13 @@
 
 
 .distribuicion{
-    margin-top: 20%;
-    margin-bottom: 31.5%;
+    margin-top: 10%;
+    margin-bottom: 15%;
 
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(
         auto-fit,minmax(
-            150px,1fr
+            0px,1fr
         )
     );
 }
@@ -47,5 +48,4 @@
     width: 150px;
     height: 150px;
     border-radius: 10px;
-    margin: 10px;
 } 
